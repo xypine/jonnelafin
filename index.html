@@ -12,7 +12,7 @@ a {
 a:hover {
 	color: black;
 }
-.inp{
+.inpu{
 	background: black;
 	color: 20C20E;
 	border: none;
@@ -27,7 +27,7 @@ a:hover {
 	color: 20C20E;
 }
 </style>
-<input class="inp" id = "inpu" onkeyup = "che()" onkeypress="ent(event)" autofocus></input>
+<input class="inpu" id = "inpu" onkeypress="ent(event)" autofocus></input>
 <p class="out" id ="out">Type help for list of commands</p>
 <script>
 
@@ -38,12 +38,16 @@ function che(){
 	if(x == "help") {
 		document.getElementById("out").innerHTML = "Uncompleted documetation: <br \> " + txt;
 	}
-	
+	else if(x == "ssh")
+	{
+		document.getElementById("out").innerHTML = "no login";
+		document.getElementById("inpu").innerHTML = "_";
+	}
 }
 function ent(event){
     if (event.which == 13 || event.keyCode == 13) {
         //code to execute here
-        alert("enter");
+        che()
     }
 	
 }
