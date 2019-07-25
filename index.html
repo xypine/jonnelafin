@@ -32,7 +32,7 @@ a:hover {
 <p>For starters:</p>
 <p>    github</p>
 <p>    music</p>
-<p>    pointbreakengine</p>
+<p>    pointbreakengine OR pbengine</p>
 <p>or you could just type something random</p>
 <script>
 
@@ -41,7 +41,16 @@ function che(){
 	var x = "text";
 	x = String(document.getElementById('inpu').value);
 	if(x == "help") {
-		document.getElementById("out").innerHTML = "Uncompleted documetation: <br \> " + txt;
+		alert("hey, I need that too!");
+	}
+        else if(x == "something random") {
+		alert("wtf");
+        }
+	else if(x == "github") {
+	        window.location.href = "github.com/jonnelafin";
+	}
+        else if(x == "pbengine" || x == "pointbreakengine") {
+	        window.location.href = "github.com/ViridiStudios/PointBreakEngine";
 	}
 	else if(x == "ssh")
 	{
@@ -49,7 +58,7 @@ function che(){
 		document.getElementById("inpu").innerHTML = "_";
 	}
 	else{
-		document.getElementById("out").innerHTML = "";
+		alert("not understood");
 	}
 }
 function ent(event){
