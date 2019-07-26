@@ -35,12 +35,12 @@ p{
 }
 .n{color: 20C20E;display: inline;}
 </style>
-<input class="inpu" id = "inpu" onkeypress="ent(event)" autofocus></input>
+<input class="inpu" id = "inpu" onkeypress="che()" autofocus></input>
 <hr \>
 <p>Tree:</p><br \>
 <p>|---github</p><br \>
 <p class="b">|---<div color="20C20E" class="n">|---pointbreakengine AKA pbengine</div></p><br \>
-<p>|---music</p><br \>
+<p>|---music</p><br \><br \>
 <p>or you could just type something random</p><br \>
 <script>
 
@@ -48,6 +48,7 @@ function che(){
 //	var txt = "<i>echo</i> <b>value</b>, echoes the value back<br \><i>secret</i>, this command opens deserts gates. <br \> <i>test</i>, you don't want to know. <br \> <i>quit</i>, exits the program <br \> <i>reload</i>, reloads the document. Use if a nasty bug appears!";
 	var x = "text";
         x = String(document.getElementById('inpu').value);	x = String(document.getElementById('inpu').value);
+	document.getElementById('inpu').value = "";
 	if(x == "help") {
 		alert("hey, I need that too!");
 	}
