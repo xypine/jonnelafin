@@ -27,11 +27,13 @@ a:hover {
 }
 p{
 	color: 20C20E;
+	display: inline;
 }
 .b{
 	color: black;
+	display: inline;
 }
-.n{color: 20C20E;}
+.n{color: 20C20E;display: inline;}
 </style>
 <input class="inpu" id = "inpu" onkeypress="ent(event)" autofocus></input>
 <hr \>
@@ -58,10 +60,14 @@ function che(){
         else if(x == "pbengine" || x == "pointbreakengine") {
 	        window.location.href = "https://github.com/ViridiStudios/PointBreakEngine";
 	}
+	else if(x == "music")
+	{
+		window.location.href = "https://soundcloud.com/jonnelafinl";
+	}
 	else if(x == "ssh")
 	{
 		document.getElementById("out").innerHTML = "no login";
-		document.getElementById("inpu").innerHTML = "_";
+		document.getElementById("inpu").innerHTML = "no login";
 	}
 	else{
 		alert("not understood");
