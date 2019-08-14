@@ -1,0 +1,35 @@
+html {
+	background: black;
+	color: rgb(204, 0, 204);
+	text-align:right;
+	background-size: cover;
+	
+	background: black;
+	background: url("unbrrd.png") no-repeat center center fixed;
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+	background-size: 100% 100%; 
+	background-repeat: no-repeat;
+	width: 100%; 
+    height: 100%; 
+	background-position: center; /* Center the image */
+}
+a {
+	vertical-align: middle;
+	position: relative;
+	font-size: 250%;
+	background: rgba(0, 0, 0);
+	opacity: 1;
+	color: rgba(204, 0, 204, 25);
+	text-decoration: none;
+	border: 19px solid dark blue;
+}
+a:hover {
+	font-size: 250%;
+	background: url("unbrrd.png") no-repeat center center fixed;
+	opacity: 1;
+	filter: blur(5px);
+	color: rgb(204, 0, 204);
+}
