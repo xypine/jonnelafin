@@ -4,8 +4,8 @@ html {
 	text-align:right;
 	background-size: cover;
 	
-	background: black;
-	background: url("unbrrd.png") no-repeat center center fixed;
+	background-color: black;
+	//background-image: url("web.svg") no-repeat center center fixed;
     -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover;    /* Mozilla*/
     -o-background-size: cover;      /* Opera*/
@@ -16,20 +16,27 @@ html {
     height: 100%; 
 	background-position: center; /* Center the image */
 }
+body {
+	background-size: cover;
+	background-image: url("web.svg");
+	background-size: 100% 100%; 
+	//width: 2%; 
+    height: 98%; 
+}
 a {
 	vertical-align: middle;
 	position: relative;
 	font-size: 250%;
-	background: rgba(0, 0, 0);
-	opacity: 1;
+	background: rgb(0, 0, 0);
+	//opacity: 1;
 	color: rgba(204, 0, 204, 25);
 	text-decoration: none;
 	border: 19px solid dark blue;
 }
 a:hover {
 	font-size: 250%;
-	background: url("unbrrd.png") no-repeat center center fixed;
-	opacity: 1;
-	filter: blur(5px);
-	color: rgb(204, 0, 204);
+	//opacity: 1;
+	//filter: blur(5px);
+	color: rgb(0, 255, 0);
+	//background: rbg(255, 255, 255);
 }
