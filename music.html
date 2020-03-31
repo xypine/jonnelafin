@@ -75,22 +75,22 @@
 		</div>
 		<script>
 			ul = document.getElementById("music")
-			var files = ["music/edge.wav", 
-				     "music/Intro.wav", 
-				     "music/tickaftertick.wav", 
-				     "music/portal1342.wav", 
-				     "music/construct.wav",
-				     "music/bass8.wav", 
-				     "music/d_loop.wav", 
-				     "music/melody.wav",
-				     "music/reed.wav", 
-				     "music/state_loop.wav", 
-				     "music/units_loop.wav", 
-				     "music/stun.wav"
+			var files = ["edge.wav", 
+				     "Intro.wav", 
+				     "tickaftertick.wav", 
+				     "portal1342.wav", 
+				     "construct.wav",
+				     "bass8.wav", 
+				     "d_loop.wav", 
+				     "melody.wav",
+				     "reed.wav", 
+				     "state_loop.wav", 
+				     "units_loop.wav", 
+				     "stun.wav"
 				    ];
 			for(i2=0;i2<files.length;i2++){
 				var l = document.createElement("p");
-				l.innerHTML = "<a href='" + files[i2] + "'>.        " + files[i2] + "</a>";
+				l.innerHTML = "<a href='music/" + files[i2] + "'>.        " + files[i2] + "</a>";
 				ul.appendChild(l);
 			}
 		</script>
