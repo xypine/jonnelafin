@@ -91,6 +91,7 @@
 			for(i2=0;i2<files.length;i2++){
 				var l = document.createElement("p");
 				l.innerHTML = "<a href='music/" + files[i2] + "'>.  .  .  .  " + files[i2] + "</a>";
+				l.innerHTML = l.innerHTML + " <audio controls>" + "<source src='music/" + files[i2] + "' type='audio/wav'>" + "</audio>"
 				ul.appendChild(l);
 			}
 		</script>
