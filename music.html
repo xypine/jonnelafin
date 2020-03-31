@@ -90,8 +90,8 @@
 				    ];
 			for(i2=0;i2<files.length;i2++){
 				var l = document.createElement("p");
-				l.innerHTML = " <audio controls>" + "<source src='music/" + files[i2] + "' type='audio/wav'>" + "</audio>"
-				l.innerHTML = l.innerHTML + ": " + files[i2] + ".  .  .  .  <a href='music/" + files[i2] + "'>" + "download" + "</a>";
+				l.innerHTML = ": " + files[i2] + ".  .  .  .  <a href='music/" + files[i2] + "'>" + "download" + "</a> ";
+				l.innerHTML = l.innerHTML + " <audio controls>" + "<source src='music/" + files[i2] + "' type='audio/wav'>" + "</audio>"
 				ul.appendChild(l);
 			}
 		</script>
