@@ -76,7 +76,7 @@
 		  <a href="https://jonnelafin.github.io">Back to home</p>
 		</div>
 		<script>
-			fuction UI(){
+			fuction UI(sort){
 				ul = document.getElementById("music");
 				ul.innerHTML = "";
 				var files = ["edge.wav", 
@@ -90,8 +90,23 @@
 					     "reed.wav", 
 					     "state_loop.wav", 
 					     "units_loop.wav", 
-					     "stun.wav"
+					     "stun.wav",
+					     "electricx.wav",
+					     "gogogo.wav",
+					     "organ.wav",
+					     "menu.wav",
+					     "tunafish.wav"
 					    ];
+				if(sort == 18){
+					files = [
+					     "electricx.wav",
+					     "gogogo.wav",
+					     "organ.wav",
+					     "menu.wav",
+					     "tunafish.wav",
+					     "intro.wav"
+						]
+				}
 				for(i2=0;i2<files.length;i2++){
 					var l = document.createElement("p");
 					l.innerHTML = ": " + files[i2] + ".  .  .  .  <a href='music/" + files[i2] + "'>" + "download" + "</a> ";
@@ -99,7 +114,7 @@
 					ul.appendChild(l);
 				}
 			}
-			UI();
+			UI("");
 		</script>
 	</footer>
 </html> 
