@@ -76,26 +76,30 @@
 		  <a href="https://jonnelafin.github.io">Back to home</p>
 		</div>
 		<script>
-			ul = document.getElementById("music")
-			var files = ["edge.wav", 
-				     "Intro.wav", 
-				     "tickaftertick.wav", 
-				     "portal1342.wav", 
-				     "construct.wav",
-				     "bass8.wav", 
-				     "d_loop.wav", 
-				     "melody.wav",
-				     "reed.wav", 
-				     "state_loop.wav", 
-				     "units_loop.wav", 
-				     "stun.wav"
-				    ];
-			for(i2=0;i2<files.length;i2++){
-				var l = document.createElement("p");
-				l.innerHTML = ": " + files[i2] + ".  .  .  .  <a href='music/" + files[i2] + "'>" + "download" + "</a> ";
-				l.innerHTML = l.innerHTML + " | <audio controls>" + "<source src='music/" + files[i2] + "' type='audio/wav'>" + "</audio>"
-				ul.appendChild(l);
+			fuction UI(){
+				ul = document.getElementById("music");
+				ul.innerHTML = "";
+				var files = ["edge.wav", 
+					     "Intro.wav", 
+					     "tickaftertick.wav", 
+					     "portal1342.wav", 
+					     "construct.wav",
+					     "bass8.wav", 
+					     "d_loop.wav", 
+					     "melody.wav",
+					     "reed.wav", 
+					     "state_loop.wav", 
+					     "units_loop.wav", 
+					     "stun.wav"
+					    ];
+				for(i2=0;i2<files.length;i2++){
+					var l = document.createElement("p");
+					l.innerHTML = ": " + files[i2] + ".  .  .  .  <a href='music/" + files[i2] + "'>" + "download" + "</a> ";
+					l.innerHTML = l.innerHTML + " | <audio controls>" + "<source src='music/" + files[i2] + "' type='audio/wav'>" + "</audio>";
+					ul.appendChild(l);
+				}
 			}
+			UI();
 		</script>
 	</footer>
 </html> 
