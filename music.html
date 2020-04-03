@@ -220,7 +220,8 @@
 			var s = "";
 			var stuff = getAllUrlParams(window.location + '');
 			if(stuff.hasOwnProperty("s")){
-				s = stuff.p;
+				console.log(stuff.s);
+				s = stuff.s;
 			}
 			UI(s);
 		</script>
