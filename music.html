@@ -88,6 +88,14 @@
 		  <a href="https://jonnelafin.github.io">Back to home</p>
 		</div>
 		<script>
+			function tog(id) {
+			  var x = document.getElementById(id);
+			  if (x.className.indexOf("w3-show") == -1) {
+			    x.className += " w3-show";
+			  } else { 
+			    x.className = x.className.replace(" w3-show", "");
+			  }
+			}
 			function UI(sort){
 				ul = document.getElementById("music");
 				ul.innerHTML = "";
