@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>JF Workshop Stats</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="theme_music.css">
+	<style>
+	html{
+		background: black;
+		color: white;
+	}
+	</style>
+</head>
+<body>
+	<div class="w3-container w3-green w3-text-black">
+		<h2>Jonnelafin 
+		Workshop Stats</h2>
+	</div>
+	<div id="music">
+			
+	</div>
+</body>
+<footer>
+	<script>
+	function getSourceAsDOM(url)
+	{
+		url = "https://cors-anywhere.herokuapp.com/" + url
+	    xmlhttp=new XMLHttpRequest();
+	    xmlhttp.open("GET",url,false);
+	    xmlhttp.send();
+	    parser=new DOMParser();
+	    return parser.parseFromString(xmlhttp.responseText,"text/html");      
+	}
+	var links = [];
+	var steam = getSourceAsDOM("https://steamcommunity.com/id/Jonnelafin/myworkshopfiles/");
+	var files = steam.getElementsByClassName("workshopItemTitle");
+	var ul = document.getElementById("music");
+	ul.innerHTML = "";
+	for(i2=0;i2<files.length;i2++){
+		var l = document.createElement("a");
+		l.href = files[i2].href;
+		l.innerHTML = files[i2].innerHTML + "\n";
+		ul.appendChild(l);
+	}
+	
+	</script>
+</footer>
+</html>
