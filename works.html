@@ -12,7 +12,7 @@
 	}
 	</style>
 </head>
-<body>
+<body onload="UI()">
 	<div class="w3-container w3-green w3-text-black">
 		<h2>Jonnelafin 
 		Workshop Stats</h2>
@@ -23,27 +23,55 @@
 </body>
 <footer>
 	<script>
+	console.log("Written by Elias Eskelinen AKA Jonnelafin")
 	function getSourceAsDOM(url)
 	{
-		url = "https://cors-anywhere.herokuapp.com/" + url
+		url = "https://cors-anywhere.herokuapp.com/" + url;
 	    xmlhttp=new XMLHttpRequest();
 	    xmlhttp.open("GET",url,false);
 	    xmlhttp.send();
 	    parser=new DOMParser();
 	    return parser.parseFromString(xmlhttp.responseText,"text/html");      
 	}
-	var links = [];
-	var steam = getSourceAsDOM("https://steamcommunity.com/id/Jonnelafin/myworkshopfiles/");
-	var files = steam.getElementsByClassName("workshopItemTitle");
-	var ul = document.getElementById("music");
-	ul.innerHTML = "";
-	for(i2=0;i2<files.length;i2++){
-		var l = document.createElement("a");
-		l.href = files[i2].href;
-		l.innerHTML = files[i2].innerHTML + "\n";
-		ul.appendChild(l);
+	function load(url){
+		var links = [];
+		var steam = getSourceAsDOM(url);
+		var files = steam.getElementsByClassName("workshopItemTitle");
+		var ul = document.getElementById("music");
+		for(i2=0;i2<files.length;i2++){
+			var l = document.createElement("a");
+			l.href = files[i2].parentElement.href;
+			var id = l.href.split("=")[1];
+			var shield2 = "<img alt='Steam Subscriptions' src='https://img.shields.io/steam/subscriptions/" + id +"?style=flat-square'>";
+			var shield = "<img alt='Steam Views' src='https://img.shields.io/steam/views/"+ id + "?style=flat-square'>";
+			var shield3 = "<img alt='Steam Subscriptions' src='https://img.shields.io/steam/size/" + id +"?style=flat-square'>";
+			var shield4 = "<img alt='Steam Subscriptions' src='https://img.shields.io/steam/downloads/" + id +"?style=flat-square'>";
+			l.innerHTML = shield2 + shield3 + shield4 + shield  + "        " + files[i2].innerHTML + " : " + id + " : " + " <br \>";
+			ul.appendChild(l);
+		}
 	}
-	
+	function UI(){
+		var ul = document.getElementById("music");
+		var t0 = performance.now();
+		ul.innerHTML = "";
+		var urls = [
+			"https://steamcommunity.com/id/Jonnelafin/myworkshopfiles/",
+			"https://steamcommunity.com/id/Jonnelafin/myworkshopfiles/?p=2",
+			
+			];
+		console.log(urls)
+		var i2 = 0;
+		for(i2=0;i2<urls.length;i2++){
+			load(urls[i2]);
+			//console.log(urls[i2]);
+			//console.log(i2);
+		}
+		var p = document.createElement("p");
+		var t1 = performance.now();
+		p.innerHTML = "loaded in " + (t1 - t0) + " ms";
+		ul.appendChild(p);
+	}
+	//UI();
 	</script>
 </footer>
 </html>
