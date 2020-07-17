@@ -48,6 +48,9 @@ a:hover {
 .l3 {
 	font-size: 130%;
 }
+.h2:hover {
+	color: rgb(40, 180, 40);
+}
 .notop {
 	margin-top: 0;
 }
@@ -71,6 +74,12 @@ a:hover {
 	font-family: 'NowRegular';
 	font-weight: normal;
 	font-style: normal; 
+}
+.w3enabled{
+	
+}
+.w3-modal-content{
+//	width: 10%;
 }
 .trayImg{
 	width: 88%;
@@ -113,3 +122,4 @@ article{
 .hidden{
 	opacity: 0;
 }
+

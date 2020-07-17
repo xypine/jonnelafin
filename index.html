@@ -8,8 +8,17 @@
 		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/now" type="text/css"/>
 		<link rel="stylesheet" type="text/css" href="theme.css">
 		<link rel="stylesheet" href="w3.css"> 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
+		<!-- Modal for full size images on click-->
+		<div id="modal01" class="w3enabled w3-modal w3-black" onclick="this.style.display='none'">
+		  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+		  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+		    <img id="img01" class="w3-image">
+		    <p id="caption" class="w3-opacity w3-large"></p>
+		  </div>
+		</div>
 		<div id="Links" class="Links">
 			<a href="https://github.com/jonnelafin">Github</a><br \>
 			<a href="https://steamcommunity.com/id/Jonnelafin/">Steam profile</a><br \>
@@ -32,13 +41,18 @@
 			<p class="l1 Label notop nound"> Gallery <p>
 			<!-- Image gallery -->
 			<p class="l2 Label notop nound halfund"> Photographs </p>
-			<div class="tray w3-container w3-row">
-				<img class="trayImg w3-quarter" src="img_src/redi.jpg" alt="Photo of REDI"></img>
-				<img class="trayImg w3-quarter" src="img_src/mokki2.jpg" alt="Photo of REDI"></img>
+			<div class="tray w3enabled w3-container w3-row">
+				<img class="trayImg w3-quarter w3-hover-sepia" src="img_src/redi.jpg" alt="Photo of REDI" onclick="onClick(this)"></img>
+				<img class="trayImg w3-quarter w3-hover-sepia" src="img_src/mokki2.jpg" alt="Photo of Muuratjärvi, Finland" onclick="onClick(this)"></img>
 				<div class="trayGroup w3-quarter">
-					<img class="trayImg" src="img_src/redi2.jpg" alt="Another photo of REDI"></img>
+					<img class="trayImg w3-hover-sepia" src="img_src/kesa2.jpg" alt="A Photo at Dawn" onclick="onClick(this)"></img>
 					<br \>
-					<img class="trayImg " src="img_src/mokki.jpg" alt="Photo of Muuratjärvi, Finland"></img>
+					<img class="trayImg w3-hover-sepia" src="img_src/kesa.jpg" alt="A Summer-y photo depicting a summer-y sunset." onclick="onClick(this)"></img>
+				</div>
+				<div class="trayGroup w3-quarter">
+					<img class="trayImg w3-hover-sepia" src="img_src/redi2.jpg" alt="Another photo of REDI" onclick="onClick(this)"></img>
+					<br \>
+					<img class="trayImg w3-hover-sepia" src="img_src/mokki.jpg" alt="Another photo of Muuratjärvi, Finland" onclick="onClick(this)"></img>
 				</div>
 			</div>
 			<p class="l2 Label notop nound"> Games </p>
@@ -54,7 +68,7 @@
 			<aside id="rightnav" class="hidden">
         		aside right
 			</aside>
-
+			<!--
 			<article class="hidden">
 				<p>
 					
@@ -70,9 +84,13 @@
 					Nullam ornare odio sed varius commodo. Suspendisse lacus nibh, egestas eu fermentum at, laoreet quis odio. Donec faucibus consequat ex ut mollis. Donec tincidunt vel odio eu convallis. Integer nulla nulla, dictum nec ullamcorper in, ultricies nec augue. Quisque luctus at nunc pretium semper. Donec dictum aliquam accumsan. Vivamus molestie massa mauris, sit amet tempor erat tristique in. Proin in felis euismod, pulvinar erat vel, dapibus augue. Praesent ut velit a neque iaculis dictum. Integer suscipit malesuada augue, quis tempor nulla ultricies sed. 
 				</p>	
 			</article>
+			-->
 		</div>
 	</body>
 	<footer>
+		<hr \>
+		<p id="https://github.com/jonnelafin/jonnelafin.github.io" class="Label l3 h2" onclick="a(this)"> See this page on  github </p>
+		<script type="text/javascript" src="modal.js"></script>
 		<script type="text/javascript">
 		</script>
 	</footer>
