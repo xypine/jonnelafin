@@ -1,7 +1,6 @@
 html {
 	background: black;
 	color: rgb(204, 0, 204);
-	text-align:right;
 	background-size: cover;
 	
 	background-color: black;
@@ -12,16 +11,13 @@ html {
     background-size: cover;         /* Generic*/
 	background-size: 100% 100%; 
 	background-repeat: no-repeat;
-	width: 100%; 
-    height: 100%; 
+//	width: 100%; 
+//    height: 100%; 
 	background-position: center; /* Center the image */
 }
 body {
-	background-size: cover;
-	background-image: url("web.svg");
-	background-size: 100% 100%; 
-	//width: 2%; 
-    height: 98%; 
+	//width: 99%; 
+//    height: 98%; 
 }
 a {
 	vertical-align: middle;
@@ -29,7 +25,7 @@ a {
 	font-size: 250%;
 	background: rgb(0, 0, 0);
 	//opacity: 1;
-	color: rgba(204, 0, 204, 25);
+	color: rgba(185, 0, 175);
 	text-decoration: none;
 	border: 19px solid dark blue;
 }
@@ -37,6 +33,83 @@ a:hover {
 	font-size: 250%;
 	//opacity: 1;
 	//filter: blur(5px);
-	color: rgb(0, 255, 0);
+	color: rgb(40, 180, 40);
 	//background: rbg(255, 255, 255);
+}
+.Label {
+	text-align: center;
+}
+.l1 {
+	font-size: 300%;
+}
+.l2 {
+	font-size: 200%;
+}
+.l3 {
+	font-size: 130%;
+}
+.notop {
+	margin-top: 0;
+}
+.halftop {
+	margin-top: 10;
+}
+.nound {
+	margin-bottom: 0;
+}
+.halfund {
+	margin-bottom: 10px;
+}
+.Links {
+	text-align:right;
+	background-size: cover;
+	background-image: url("web.svg");
+	background-size: 100% 100%; 
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	font-family: 'NowRegular';
+	font-weight: normal;
+	font-style: normal; 
+}
+.trayImg{
+	width: 88%;
+	height: auto;
+    display: table-cell;
+    white-space: nowrap;
+}
+.trayGroup{
+//	width: 25%;
+//	height: auto;
+    display: table-cell;
+    white-space: nowrap;
+}
+.faded{
+	opacity:0.75;
+}
+.indetail {
+}
+article{
+	width:600px;
+	margin:0 auto;
+	background-color: darkgray;
+ /*margin-left:15px;*/
+ /*padding-left:65px;*/
+}
+#leftnav{
+ float:left;    
+ width:160px;
+ outline:#000 dotted:
+ /*margin-right:15px; */
+ /*padding:15px;*/
+ /*padding-right:2cm;*/
+}
+
+#rightnav{
+	float:right;   
+	width:160px;
+	outline:#000 dotted:
+}
+.hidden{
+	opacity: 0;
 }

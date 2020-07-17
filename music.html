@@ -5,27 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" type="text/css" href="theme_music.css">
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/now" type="text/css"/>
 		<style>
 		html{
 			background: black;
 			color: white;
 		}
 		</style>
-		<!-- Matomo -->
-		<script type="text/javascript">
-		  var _paq = window._paq || [];
-		  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-		  _paq.push(['trackPageView']);
-		  _paq.push(['enableLinkTracking']);
-		  (function() {
-		    var u="https://jonnelafin.matomo.cloud/";
-		    _paq.push(['setTrackerUrl', u+'matomo.php']);
-		    _paq.push(['setSiteId', '1']);
-		    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-		    g.type='text/javascript'; g.async=true; g.defer=true; g.src='//cdn.matomo.cloud/jonnelafin.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-		  })();
-		</script>
-		<!-- End Matomo Code -->
 	</head>
 	<body>
 
@@ -232,8 +218,8 @@
 				}
 				for(i2=0;i2<files.length;i2++){
 					var l = document.createElement("p");
-					l.innerHTML = ": " + files[i2] + ".  .  .  .  <a href='music/" + files[i2] + "'>" + "download" + "</a> ";
-					l.innerHTML = l.innerHTML + " | <audio controls>" + "<source src='music/" + files[i2] + "' type='audio/wav'>" + "</audio>";
+					l.innerHTML = ": " + files[i2] + ".  .  .  .  <a href='music_src/" + files[i2] + "'>" + "download" + "</a> ";
+					l.innerHTML = l.innerHTML + " | <audio controls>" + "<source src='music_src/" + files[i2] + "' type='audio/wav'>" + "</audio>";
 					ul.appendChild(l);
 				}
 			}

@@ -4,39 +4,73 @@
 		<title>Jonnelafin Profile</title>
 		<link rel="icon" href="/favicon.svg">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/now" type="text/css"/>
 		<link rel="stylesheet" type="text/css" href="theme.css">
-		<!-- Matomo -->
-		<script type="text/javascript">
-		  var _paq = window._paq || [];
-		  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-		  _paq.push(['trackPageView']);
-		  _paq.push(['enableLinkTracking']);
-		  (function() {
-		    var u="https://jonnelafin.matomo.cloud/";
-		    _paq.push(['setTrackerUrl', u+'matomo.php']);
-		    _paq.push(['setSiteId', '1']);
-		    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-		    g.type='text/javascript'; g.async=true; g.defer=true; g.src='//cdn.matomo.cloud/jonnelafin.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
-		  })();
-		</script>
-		<!-- End Matomo Code -->
-
+		<link rel="stylesheet" href="w3.css"> 
 	</head>
 	<body>
-		<a href="https://github.com/jonnelafin">Github</a><br \>
-		<a href="https://steamcommunity.com/id/Jonnelafin/">Steam profile</a><br \>
+		<div id="Links" class="Links">
+			<a href="https://github.com/jonnelafin">Github</a><br \>
+			<a href="https://steamcommunity.com/id/Jonnelafin/">Steam profile</a><br \>
+			<hr \>
+			<a href="music.html">Music Archive</a><br \>
+			<hr \>
+			<a href="https://jonnelafin.itch.io/">Games</a><br \>
+			<a href="https://soundcloud.com/jonnelafin">Music</a><br \>
+			<a href="https://gamebanana.com/members/1651842">CSGO Maps</a><br \>
+			<a href="https://steamcommunity.com/id/Jonnelafin/myworkshopfiles/?appid=730&sort=score&browsefilter=myfiles&view=imagewall">CSGO Workshop</a><br \>
+	                <a href="https://www.youtube.com/channel/UCwGtFQ7i5Le-K58TG_r6dug">Youtube</a><br \>
+			<hr \>
+	                <a href="https://raw.githubusercontent.com/jonnelafin/dotfiles/master/keys/ssh.pub">Public SSH key</a><br \>
+			<a href="https://raw.githubusercontent.com/jonnelafin/dotfiles/master/keys/publicKey.asc">Public PGP key</a><br \>
+			<a href="mailto:elias.eskelinen@protonmail.com">Send email</a><br \>
+		</div>
+		<br \>
 		<hr \>
-		<a href="music">Music Archive</a><br \>
-		<hr \>
-		<a href="https://jonnelafin.itch.io/">Games</a><br \>
-		<a href="https://soundcloud.com/jonnelafin">Music</a><br \>
-		<a href="https://gamebanana.com/members/1651842">CSGO Maps</a><br \>
-		<a href="https://steamcommunity.com/id/Jonnelafin/myworkshopfiles/?appid=730&sort=score&browsefilter=myfiles&view=imagewall">CSGO Workshop</a><br \>
-                <a href="https://www.youtube.com/channel/UCwGtFQ7i5Le-K58TG_r6dug">Youtube</a><br \>
-		<hr \>
-                <a href="https://raw.githubusercontent.com/jonnelafin/dotfiles/master/keys/ssh.pub">Public SSH key</a><br \>
-		<a href="https://raw.githubusercontent.com/jonnelafin/dotfiles/master/keys/publicKey.asc">Public PGP key</a><br \>
-		<a href="mailto:elias.eskelinen@protonmail.com">Send email</a><br \>
+		<div class="indetail">
+			<p class="l1 Label notop nound"> Gallery <p>
+			<!-- Image gallery -->
+			<p class="l2 Label notop nound halfund"> Photographs </p>
+			<div class="tray w3-container w3-row">
+				<img class="trayImg w3-quarter" src="img_src/redi.jpg" alt="Photo of REDI"></img>
+				<img class="trayImg w3-quarter" src="img_src/mokki2.jpg" alt="Photo of REDI"></img>
+				<div class="trayGroup w3-quarter">
+					<img class="trayImg" src="img_src/redi2.jpg" alt="Another photo of REDI"></img>
+					<br \>
+					<img class="trayImg " src="img_src/mokki.jpg" alt="Photo of Muuratjärvi, Finland"></img>
+				</div>
+			</div>
+			<p class="l2 Label notop nound"> Games </p>
+			<p class="l3 Label notop faded halfund"> (Not <i>that</i> good.) </p>
+			<div class="tray">
+				<iframe src="https://itch.io/embed/676733?bg_color=001828&amp;fg_color=ffffff&amp;link_color=b58000&amp;border_color=2d4f78" width="49%" height="167" frameborder="0"><a href="https://jonnelafin.itch.io/rps">RPS by jonnelafin</a></iframe>
+				<iframe src="https://itch.io/embed/697338?bg_color=000000&amp;fg_color=ffffff&amp;link_color=29aaa3&amp;border_color=613333" width="49%" height="167" frameborder="0"><a href="https://jonnelafin.itch.io/control">100% Control by jonnelafin</a></iframe>
+			</div>
+			<aside id="leftnav" class="hidden">
+        		aside left
+			</aside>
+
+			<aside id="rightnav" class="hidden">
+        		aside right
+			</aside>
+
+			<article class="hidden">
+				<p>
+					
+					
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat felis a massa dictum, ac elementum eros euismod. In facilisis, risus non ultrices aliquet, enim lacus vestibulum est, in convallis lectus ipsum quis ex. Praesent euismod lorem ullamcorper, iaculis ex eu, tempor ligula. Quisque in est suscipit, congue nunc nec, fringilla est. Aenean nec mi ut tortor fringilla semper in a odio. Ut eu neque sit amet erat maximus dignissim. Pellentesque commodo bibendum lorem quis ornare. Sed venenatis nulla sed purus commodo tincidunt. Phasellus lorem justo, laoreet at ex sed, dignissim maximus risus. In eleifend eros non mattis hendrerit. Proin sollicitudin velit sed lectus ultrices, nec tempus augue porta.
+					
+					Praesent congue justo sapien, ut sagittis est eleifend ac. Suspendisse non dolor leo. Vivamus ut tellus feugiat, posuere urna at, sagittis quam. Ut dignissim lacinia justo in consequat. Sed bibendum eros vel condimentum semper. Nunc at lorem ligula. Mauris blandit libero suscipit dolor consectetur lobortis. Phasellus laoreet id quam quis vehicula. Donec vel sapien id metus aliquam imperdiet. Etiam aliquam eu urna sed consequat. Praesent non nunc eu ipsum viverra pulvinar.
+					
+					Aliquam et magna suscipit, sollicitudin est vitae, vulputate risus. Phasellus nulla tellus, placerat sed sagittis eu, aliquam aliquam risus. Aenean non risus est. Donec nec sem vitae mauris luctus laoreet. Suspendisse nec massa vitae est rutrum rhoncus. Sed condimentum fermentum blandit. Fusce euismod malesuada mi egestas rhoncus. Aenean venenatis, justo sed laoreet pharetra, ante augue lacinia neque, in tempor lorem erat eget velit. Vivamus mattis magna at consectetur vulputate. Nam vitae erat in nibh pretium ultricies. Nulla malesuada lobortis dolor sit amet auctor. Cras ut pretium nunc. Cras euismod enim a massa vulputate, consequat egestas leo consequat. Nunc elementum, orci nec tempus consequat, odio lacus rutrum lorem, at faucibus enim nisi at velit. Ut vehicula ante orci, at auctor mi pharetra sit amet.
+					
+					Suspendisse porta ex vel facilisis lobortis. Donec tincidunt lacinia felis, sed vulputate velit facilisis nec. Aenean auctor magna vitae posuere cursus. Donec luctus, sem a aliquet congue, mi diam volutpat est, vel tincidunt nibh nunc a orci. Nunc id imperdiet purus. Donec at varius ipsum. Donec dolor leo, vehicula ac dui ac, convallis maximus sapien. Aenean sit amet mi tempus, scelerisque leo vitae, aliquam lorem. Vestibulum pulvinar urna odio, eu vehicula eros imperdiet vel. Phasellus fringilla, magna sed auctor porta, lorem turpis congue mi, accumsan consectetur magna felis eu elit. Quisque a iaculis sapien. Praesent placerat justo vel ipsum ultricies luctus. Pellentesque et ante pulvinar, aliquam enim ut, venenatis ante. Proin id neque mattis, rhoncus tellus condimentum, ullamcorper sem.
+					
+					Nullam ornare odio sed varius commodo. Suspendisse lacus nibh, egestas eu fermentum at, laoreet quis odio. Donec faucibus consequat ex ut mollis. Donec tincidunt vel odio eu convallis. Integer nulla nulla, dictum nec ullamcorper in, ultricies nec augue. Quisque luctus at nunc pretium semper. Donec dictum aliquam accumsan. Vivamus molestie massa mauris, sit amet tempor erat tristique in. Proin in felis euismod, pulvinar erat vel, dapibus augue. Praesent ut velit a neque iaculis dictum. Integer suscipit malesuada augue, quis tempor nulla ultricies sed. 
+				</p>	
+			</article>
+		</div>
 	</body>
 	<footer>
 		<script type="text/javascript">
