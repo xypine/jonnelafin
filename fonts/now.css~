@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'NowBlack';
+        src: url('/assets/fonts/now/3c10e0ecd702cb63f03deaf3e8ed2680/1460c3f832162b3f53f965f4638204cf/NowBlack.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'NowBold';
+        src: url('/assets/fonts/now/3c10e0ecd702cb63f03deaf3e8ed2680/0eea239da4b3e06160fafff577074d16/NowBold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'NowExtraBold';
+        src: url('/assets/fonts/now/3c10e0ecd702cb63f03deaf3e8ed2680/5a0fe8cc5374781a906008b09c889904/NowExtraBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'NowExtraLight';
+        src: url('/assets/fonts/now/3c10e0ecd702cb63f03deaf3e8ed2680/fb8990a0b659bcf9e7c5489120356bbb/NowExtraLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'NowLight';
+        src: url('/assets/fonts/now/3c10e0ecd702cb63f03deaf3e8ed2680/3189b05a21e9c6836a6308f4ed6f792a/NowLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'NowMedium';
+        src: url('/assets/fonts/now/3c10e0ecd702cb63f03deaf3e8ed2680/f4fdcc5bec8e5ac54658e15ab7f8df80/NowMedium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'NowRegular';
+        src: url('/assets/fonts/now/3c10e0ecd702cb63f03deaf3e8ed2680/f4cc5c139b692d71137a08245e4785d7/NowRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'NowSemiBold';
+        src: url('/assets/fonts/now/3c10e0ecd702cb63f03deaf3e8ed2680/d01d7e6599ae49b5f0e5f0ae57b594e6/NowSemiBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'NowThin';
+        src: url('/assets/fonts/now/3c10e0ecd702cb63f03deaf3e8ed2680/a93fd4a4b70b36715362c7eed05265fd/NowThin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+ /* The following rules are deprecated. */ 
+
+@font-face {
+    font-family: 'Now';
+        src: url('/assets/fonts/now/3c10e0ecd702cb63f03deaf3e8ed2680/1460c3f832162b3f53f965f4638204cf/NowBlack.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Now';
+        src: url('/assets/fonts/now/3c10e0ecd702cb63f03deaf3e8ed2680/0eea239da4b3e06160fafff577074d16/NowBold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Now';
+        src: url('/assets/fonts/now/3c10e0ecd702cb63f03deaf3e8ed2680/5a0fe8cc5374781a906008b09c889904/NowExtraBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Now';
+        src: url('/assets/fonts/now/3c10e0ecd702cb63f03deaf3e8ed2680/fb8990a0b659bcf9e7c5489120356bbb/NowExtraLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Now';
+        src: url('/assets/fonts/now/3c10e0ecd702cb63f03deaf3e8ed2680/3189b05a21e9c6836a6308f4ed6f792a/NowLight.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Now';
+        src: url('/assets/fonts/now/3c10e0ecd702cb63f03deaf3e8ed2680/f4fdcc5bec8e5ac54658e15ab7f8df80/NowMedium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Now';
+        src: url('/assets/fonts/now/3c10e0ecd702cb63f03deaf3e8ed2680/f4cc5c139b692d71137a08245e4785d7/NowRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Now';
+        src: url('/assets/fonts/now/3c10e0ecd702cb63f03deaf3e8ed2680/d01d7e6599ae49b5f0e5f0ae57b594e6/NowSemiBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+
+@font-face {
+    font-family: 'Now';
+        src: url('/assets/fonts/now/3c10e0ecd702cb63f03deaf3e8ed2680/a93fd4a4b70b36715362c7eed05265fd/NowThin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
