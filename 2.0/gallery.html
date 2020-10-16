@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+	<title>JF Gallery</title>
+	<meta name="description" content="Gallery">
+	<meta name="author" content="jonnelafin">
+	<link rel="icon" href="/favicon.png">
+
+	<link rel="stylesheet" href="gallery/styles.css">
+	<link rel="stylesheet" href="/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+		.w3-row-padding img {margin-bottom: 12px}
+		/* Set the width of the sidebar to 120px */
+		.w3-sidebar {width: 120px;background: #222;}
+		/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+		#main {margin-left: 120px}
+		/* Remove margins from "page content" on small screens */
+		@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+	</style>
+</head>
+
+<body class="w3-black">
+	<!-- Icon Bar (Sidebar - hidden on small screens) -->
+	<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+	  <!-- Avatar image in top left corner -->
+	  <img src="/favicon.png" style="width:100%; background: ;">
+	  <a href="/" class="w3-bar-item w3-button w3-padding-large w3-black">
+	    <i class="fa fa-home w3-large"></i>
+	    <p>HOME</p>
+	  </a>
+	  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	    <i class="fa fa-eye w3-large"></i>
+	    <p>GALLERY</p>
+	  </a>
+	  <a href="#2020" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	    
+	    <p>2020</p>
+	  </a>
+	  <a href="#2019" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	    
+	    <p>2019</p>
+	  </a>
+	  <a href="#2018" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	    
+	    <p>2018</p>
+	  </a>
+	</nav>
+	
+	<!-- Navbar on small screens (Hidden on medium and large screens) -->
+	<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+	  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+	    <a href="/" class="w3-bar-item w3-button" style="width:19% !important">HOME</a>
+	    <a href="#" class="w3-bar-item w3-button" style="width:19% !important">GALLERY</a>
+	    <a href="#2020" class="w3-bar-item w3-button" style="width:19% !important">2020</a>
+	    <a href="#2019" class="w3-bar-item w3-button" style="width:19% !important">2019</a>
+	    <a href="#2018" class="w3-bar-item w3-button" style="width:19% !important">2018</a>
+	  </div>
+	</div>
+	<!-- Page Content -->
+	<div class="w3-padding-large" id="main">
+		<!-- Header/Home -->
+		<header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+		  <h1 class="w3-jumbo"><span class="w3-hide-small">My</span> Gallery</h1>
+		  <p>I like to take photos. Sometimes.</p>
+		  <!-- <img src="/w3images/man_smoke.jpg" alt="img" class="w3-image" width="992" height="1108"> -->
+		</header>
+		<!-- <h3> Hello world! </h3> -->
+		<!-- 2020 -->
+		  <div class="w3-padding-64 w3-content" id="2020">
+		    <h2 class="w3-xxxlarge"><span class="w3-hide-small">From </span> 2020</h2>
+   		  	<p>Photos from the year many wish the had already forgotten.</p>
+		    <hr style="width:200px" class="w3-opacity">
+		
+		    <!-- Grid for photos -->
+		    <div class="w3-row-padding" style="margin:0 -20px">
+		      <div class="w3-half">
+		        <img src="gallery/normal/old/mokki.jpg" style="width:99%">
+		        <img src="gallery/normal/old/mokki2.jpg" style="width:99%">
+		        <img src="gallery/normal/old/kesa.jpg" style="width:99%">
+		      </div>
+		
+		      <div class="w3-half">
+		        <img src="gallery/normal/old/redi.jpg" style="width:99%">
+		        <img src="gallery/normal/old/redi2.jpg" style="width:99%">
+		        <img src="gallery/normal/old/redi3.jpg" style="width:99%">
+		        <img src="gallery/normal/old/redi4.jpg" style="width:99%">
+		      </div>
+		    <!-- End photo grid -->
+		    </div>
+		  <!-- End 2020 -->
+		  </div>
+		<!-- 2019 -->
+		  <div class="w3-padding-64 w3-content" id="2019">
+		    <h2 class="w3-xxxlarge"><span class="w3-hide-small">From </span> 2019</h2>
+   		  	<p>Photos from the year many wish the had already forgotten.</p>
+		    <hr style="width:200px" class="w3-opacity">
+		
+		    <!-- Grid for photos -->
+		    <div class="w3-row-padding" style="margin:0 -20px">
+		      <div class="w3-half">
+		        <img src="gallery/normal/old/mokki.jpg" style="width:99%">
+		        <img src="gallery/normal/old/mokki2.jpg" style="width:99%">
+		        <img src="gallery/normal/old/kesa.jpg" style="width:99%">
+		      </div>
+		
+		      <div class="w3-half">
+		        <img src="gallery/normal/old/redi.jpg" style="width:99%">
+		        <img src="gallery/normal/old/redi2.jpg" style="width:99%">
+		        <img src="gallery/normal/old/redi3.jpg" style="width:99%">
+		        <img src="gallery/normal/old/redi4.jpg" style="width:99%">
+		      </div>
+		    <!-- End photo grid -->
+		    </div>
+		  <!-- End 2019 -->
+		  </div>
+		<!-- 2018 -->
+		  <div class="w3-padding-64 w3-content" id="2018">
+		    <h2 class="w3-xxxlarge"><span class="w3-hide-small">From </span> 2018</h2>
+   		  	<p>When not mutch happened.</p>
+		    <hr style="width:200px" class="w3-opacity">
+		
+		    <!-- Grid for photos -->
+		    <div class="w3-row-padding" style="margin:0 -20px">
+		      <div class="w3-half">
+		        <img src="gallery/normal/old/mokki.jpg" style="width:99%">
+		        <img src="gallery/normal/old/mokki2.jpg" style="width:99%">
+		        <img src="gallery/normal/old/kesa.jpg" style="width:99%">
+		      </div>
+		
+		      <div class="w3-half">
+		        <img src="gallery/normal/old/redi.jpg" style="width:99%">
+		        <img src="gallery/normal/old/redi2.jpg" style="width:99%">
+		        <img src="gallery/normal/old/redi3.jpg" style="width:99%">
+		        <img src="gallery/normal/old/redi4.jpg" style="width:99%">
+		      </div>
+		    <!-- End photo grid -->
+		    </div>
+		  <!-- End 2018 -->
+		  </div>
+	</div>
+</body>
+<footer>
+	<script src="js/scripts.js"></script>
+</footer>
+</html>
