@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
 	<style>
 		body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 		.w3-row-padding img {margin-bottom: 12px}
@@ -22,10 +23,15 @@
 		.w3-sidebar {width: 120px;background: #222;}
 		/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 		#main {margin-left: 120px}
+	</style>
+	<style id="side">
+		.w3-sidebar {right: auto}
+		#main {margin-right: 0px}
+		#main {margin-left: 120px}
 		/* Remove margins from "page content" on small screens */
-		@media only screen and (max-width: 600px) {#main {margin-left: 0px}} /* originally 0  */
-		@media only screen and (max-width: 600px) {#main {margin-right: 55px}} /* originally 0  */
-		@media only screen and (max-width: 600px) {.w3-sidebar {width: 55px}}
+		@media only screen and (max-width: 600px) {#main {margin-left: 0px !important}} /* originally 0  */
+		@media only screen and (max-width: 600px) {#main {margin-right: 55px !important}} /* originally 0  */
+		@media only screen and (max-width: 600px) {.w3-sidebar {width: 55px !important}}
 		@media only screen and (max-width: 600px) {.w3-bar-item {padding: 2px !important}}
 		@media only screen and (max-width: 600px) {.w3-sidebar {right:0 !important}}
 	</style>
@@ -56,6 +62,9 @@
 	    
 	    <p>2018</p>
 	  </a>
+	  <a href="#switch_navigation_sides" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-large" onclick="side()">
+	  	<i class="fas fa-arrows-alt-h"></i>
+  	  </a>
 	</nav>
 	
 	<!-- Navbar on small screens (Hidden on medium and large screens) -->
@@ -153,7 +162,31 @@
 		  </div>
 	</div>
 	<footer>
-		<script src="js/scripts.js"></script>
+		<script>
+		var s_m = document.getElementById("side");
+		var right = s_m.innerHTML;
+		var left = `
+			.w3-sidebar {right: 0}
+			#main {margin-right: 120px}
+			#main {margin-left: 0px}
+			/* Remove margins from "page content" on small screens */
+			@media only screen and (max-width: 600px) {#main {margin-left: 55px !important}} /* originally 0  */
+			@media only screen and (max-width: 600px) {#main {margin-right: 0px !important}} /* originally 0  */
+			@media only screen and (max-width: 600px) {.w3-sidebar {width: 55px !important}}
+			@media only screen and (max-width: 600px) {.w3-bar-item {padding: 2px !important}}
+			@media only screen and (max-width: 600px) {.w3-sidebar {right: auto !important}}
+		`;
+		var isRight = true;
+		function side(){
+			if(isRight === true){
+				s_m.innerHTML = left;
+			}
+			else{
+				s_m.innerHTML = right;
+			}
+			isRight = !isRight;
+		}
+		</script>
 		<script type="text/javascript" src="/modal.js"></script>
 	</footer>
 </body>
