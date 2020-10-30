@@ -1,0 +1,25 @@
+// TAVR - AUTO RADAR. v 2.5.0a
+"de_bluemall"
+{
+	"CTSpawn_x" "-0.630000"
+	"CTSpawn_y" "0.190000"
+	"TSpawn_x" "0.210000"
+	"TSpawn_y" "0.230000"
+	"material" "overviews/de_bluemall"
+	"pos_x" "-640.000000"
+	"pos_y" "1288.000000"
+	"scale" "4.520000"
+	"verticalsections"
+	{
+		"default"
+		{
+			"AltitudeMax" "10000.000000"
+			"AltitudeMin" "160.718002"
+		}
+		"layer1"
+		{
+			"AltitudeMax" "160.718002"
+			"AltitudeMin" "-10000.000000"
+		}
+	}
+}
