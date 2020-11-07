@@ -11,6 +11,9 @@
 		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 	</head>
 	<body>
+		<!-- 2.0 -->
+		<a href="/2.0/gallery.html" id="2.0" style="font-size: 500%;display:none;"> Visit 2.0 </a>
+		<!-- /2.0 -->
 		   <script>0</script>
 		<!-- Modal for full size images on click-->
 		<div id="modal01" class="w3enabled w3-modal w3-black" onclick="this.style.display='none'">
@@ -92,9 +95,16 @@
 	<footer>
 		   <script>0</script>
 		<hr \>
-		<p id="https://github.com/jonnelafin/jonnelafin.github.io" class="Label l3 h2" onclick="a(this)"> See this page on  github </p>
+		<p id="https://github.com/jonnelafin/jonnelafin.github.io" class="Label l3 h2" onclick="a(this)" style="cursor: pointer;"> See this page on  github </p>
 		<script type="text/javascript" src="modal.js"></script>
 		<script type="text/javascript">
+			console.log("Stop snooping around :D");
+			console.log("The full source code for this site is here: https://github.com/jonnelafin/jonnelafin.github.io");
+			if (location.hostname === "localhost" || location.hostname === "127.0.0.1"){
+				console.log("Localhost detected!");
+				document.getElementById("2.0").style.display = "block";
+			}
+			console.log("Please remember that any and all code on this site is licensed under the MIT License: https://github.com/jonnelafin/jonnelafin.github.io/blob/master/LICENSE");
 		</script>
 	</footer>
 </html>

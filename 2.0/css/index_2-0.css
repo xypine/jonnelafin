@@ -1,0 +1,11 @@
+button{
+	border:0px;
+}
+button:hover{
+	color: white;
+	background-color: black;
+}
+
+.jf-img{
+	cursor: pointer;
+}
