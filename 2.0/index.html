@@ -37,7 +37,7 @@
 	</style>
 </head>
 
-<body class="w3-black">
+<body class="w3-black" id="body">
 	<!-- Icon Bar (Sidebar - hidden on small screens) -->
 	<nav class="w3-sidebar w3-bar-block w3-small w3-center"> <!--  w3-hide-small -->
 	  <!-- Avatar image in top left corner -->
@@ -50,18 +50,27 @@
 	    <i class="fa fa-eye w3-large w3-hide-small"></i>
 	    <p>TOP</p>
 	  </a>
-	  <a href="#2020" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	  <a href="#gallery" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
 	    
-	    <p>2020</p>
+	    <p>Gallery</p>
 	  </a>
-	  <a href="#2019" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	  <a href="#software" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
 	    
-	    <p>2019</p>
+	    <p>Software</p>
 	  </a>
-	  <a href="#2018" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	  <a href="#music" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
 	    
-	    <p>2018</p>
+	    <p>Music</p>
 	  </a>
+	  <a href="#maps" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	    
+	    <p>Maps & Skins</p>
+	  </a>
+	  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	    
+	    <p>Contact</p>
+	  </a>
+	  
 	  <a href="#switch_navigation_sides" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-large" onclick="side()">
 	  	<i class="fas fa-arrows-alt-h"></i>
   	  </a>
@@ -114,10 +123,89 @@
 			<hr \>
 		  <!-- End 2020 -->
 		  </div>
+		<!-- End Gallery -->
+		
+		<!-- Software -->
+		  <div class="w3-padding-64 w3-content" id="software">
+		    <h2 class="w3-xxxlarge">Apps<span class="w3-hide-big w3-hide-medium"></span><span class="w3-hide-small"> / Software</span></h2>
+   		  	<p>Blablablabaa</p>
+		    <hr style="width:200px" class="w3-opacity">
+		    <!-- Grid for photos -->
+		    <div class="w3-row-padding" style="margin:0 -20px">
+		      <div class="w3-half">
+		      </div>
+		      <div class="w3-half">
+		      </div>
+			  <button class="w3-col" style="width:100%;padding:1px;margin:5px;cursor: pointer;" onclick="openInNewTab('https://github.com/jonnelafin')"> My Github Profile </button>
+		    <!-- End photo grid -->
+		    </div>
+			<hr \>
+		  <!-- End Grid -->
+		  </div>
+		<!-- End Software -->
+		
+		<!-- Music -->
+		  <div class="w3-padding-64 w3-content" id="music">
+		    <h2 class="w3-xxxlarge">Music</h2>
+   		  	<p>Blablablabaa</p>
+		    <hr style="width:200px" class="w3-opacity">
+		    <!-- Grid for links -->
+		    <div class="w3-row-padding" style="margin:0 -20px">
+			  <button class="w3-col" style="width:100%;padding:1px;margin:5px;cursor: pointer;" onclick="openInNewTab('/music.html')"> Music Archives </button>
+			  <button class="w3-col" style="width:100%;padding:1px;margin:5px;cursor: pointer;" onclick="openInNewTab('gallery.html')"> Soundcloud </button>
+		    <!-- End Link grid -->
+		    </div>
+			<hr \>
+		  <!-- End Grid -->
+		  </div>
+		<!-- End Music -->
+		
+		<!-- Maps & Skins -->
+		  <div class="w3-padding-64 w3-content" id="maps">
+		    <h2 class="w3-xxxlarge">Maps & Games</h2>
+   		  	<p>Blablablabaa</p>
+		    <hr style="width:200px" class="w3-opacity">
+		    <!-- Grid for links -->
+		    <div class="w3-row-padding" style="margin:0 -20px">
+			  <button class="w3-col" style="width:100%;padding:1px;margin:5px;cursor: pointer;" onclick="openInNewTab('https://steamcommunity.com/id/Jonnelafin/myworkshopfiles/')"> Steam Workshop </button>
+			  <button class="w3-col" style="width:100%;padding:1px;margin:5px;cursor: pointer;" onclick="openInNewTab('https://gamebanana.com/members/1651842')"> Gamebanana </button>
+		    <!-- End Link grid -->
+		    </div>
+			<hr \>
+		  <!-- End Grid -->
+		  </div>
+		<!-- End Maps & Skins -->
+		
+		<!-- Contact -->
+		  <div class="w3-padding-64 w3-content" id="contact">
+		    <h2 class="w3-xxxlarge">Contact</h2>
+   		  	<p>Some places where you can reach me:</p>
+				<!-- <hr style="width:200px" class="w3-opacity"> -->
+		    <!-- Grid for links -->
+		    <div class="w3-row-padding" style="margin:0 -15px">
+			  <button class="w3-col" style="width:23.5%;padding:1px;margin:5px;cursor: pointer;" onclick="openInNewTab('https://steamcommunity.com/id/Jonnelafin/')"> Steam </button>
+			  <button class="w3-col" style="width:23.5%;padding:1px;margin:5px;cursor: pointer;" onclick="openInNewTab('https://github.com/jonnelafin"> Github </button>
+			  <button class="w3-col" style="width:23.5%;padding:1px;margin:5px;cursor: pointer;" onclick="document.getElementById('discordlink').style.display='block'"> Discord </button>
+			  <button class="w3-col" style="width:23.5%;padding:1px;margin:5px;cursor: pointer;" onclick="openInNewTab('https://t.me/eskearn')"> Telegram </button>
+			  <p class="w3-col w3-center" style="width:100%;padding:1px;margin:5px;border:1px solid gray;display:none;" id="discordlink"> My discord id is: Jonnelafin#5276 </p>
+		    <!-- End Link Grid -->
+		    </div>
+			
+			<p>Or if you need to contact me directly:</p>
+			<div class="w3-row-padding" style="margin:0 -15px">
+				<button class="w3-col" style="width:32%;padding:1px;margin:5px;cursor: pointer;" onclick="openInNewTab('mailto:elias.eskelinen@protonmail.com')"> elias.eskelinen@pm.me </button>
+				<button class="w3-col" style="width:32%;padding:1px;margin:5px;cursor: pointer;" onclick="openInNewTab('https://raw.githubusercontent.com/jonnelafin/dotfiles/master/keys/publicKey.asc')"> PGP Key </button>
+				<button class="w3-col" style="width:32%;padding:1px;margin:5px;cursor: pointer;" onclick="openInNewTab('https://raw.githubusercontent.com/jonnelafin/dotfiles/master/keys/ssh.pub')"> SSH Key </button>
+			</div>
+			<hr \>
+		  <!-- End Grid -->
+		  </div>
+		<!-- End Music -->
 		<hr \>
 	</div>
 	<footer>
 		<script>
+		var usePopups = false;
 		var s_m = document.getElementById("side");
 		var right = s_m.innerHTML;
 		var left = `
@@ -141,8 +229,17 @@
 			}
 			isRight = !isRight;
 		}
+		function pop(text){
+			if(usePopups){
+				popup(text);
+			}
+			else{
+				alert(text);
+			}
+		}
 		</script>
 		<script type="text/javascript" src="/modal.js"></script>
+		<script type="text/javascript" src="js/popup.js"></script>
 	</footer>
 </body>
 </html>

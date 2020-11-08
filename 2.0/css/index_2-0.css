@@ -9,3 +9,7 @@ button:hover{
 .jf-img{
 	cursor: pointer;
 }
+
+.jf-hidden1{
+	display: none;
+}
