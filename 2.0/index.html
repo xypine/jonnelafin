@@ -42,34 +42,41 @@
 	<nav class="w3-sidebar w3-bar-block w3-small w3-center"> <!--  w3-hide-small -->
 	  <!-- Avatar image in top left corner -->
 	  <img src="/favicon.png" style="width:100%; background: ;">
-	  <a href="/" class="w3-bar-item w3-button w3-padding-large w3-black">
+	  <a href="/" class="w3-bar-item w3-button w3-padding-large w3-black jf-menu-item">
 	    <i class="fa fa-home w3-large w3-hide-small"></i>
 	    <p>HOME</p>
 	  </a>
-	  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	  <hr class="jf-menu-hr" \>
+	  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black jf-menu-item">
 	    <i class="fa fa-eye w3-large w3-hide-small"></i>
 	    <p>TOP</p>
 	  </a>
-	  <a href="#gallery" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	  <hr class="jf-menu-hr" \>
+	  <a href="#gallery" class="w3-bar-item w3-button w3-padding-large w3-hover-black jf-menu-item">
 	    
 	    <p>Gallery</p>
 	  </a>
-	  <a href="#software" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	  <hr class="jf-menu-hr" \>
+	  <a href="#software" class="w3-bar-item w3-button w3-padding-large w3-hover-black jf-menu-item">
 	    
 	    <p>Software</p>
 	  </a>
-	  <a href="#music" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	  <hr class="jf-menu-hr" \>
+	  <a href="#music" class="w3-bar-item w3-button w3-padding-large w3-hover-black jf-menu-item">
 	    
 	    <p>Music</p>
 	  </a>
-	  <a href="#maps" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	  <hr class="jf-menu-hr" \>
+	  <a href="#maps" class="w3-bar-item w3-button w3-padding-large w3-hover-black jf-menu-item">
 	    
 	    <p>Maps & Skins</p>
 	  </a>
-	  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+	  <hr class="jf-menu-hr" \>
+	  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black jf-menu-item">
 	    
 	    <p>Contact</p>
 	  </a>
+	  <hr class="jf-menu-hr" \>
 	  
 	  <a href="#switch_navigation_sides" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-large" onclick="side()">
 	  	<i class="fas fa-arrows-alt-h"></i>
@@ -101,7 +108,7 @@
 		<!-- <h3> Hello world! </h3> -->
 		<!-- Gallery -->
 		  <div class="w3-padding-64 w3-content" id="gallery">
-		    <h2 class="w3-xxxlarge">Photo<span class="w3-hide-big w3-hide-medium">s</span><span class="w3-hide-small">graphs </span></h2>
+		    <h2 class="w3-xxxlarge"><span class="w3-hide-large w3-hide-medium">Photos </span><span class="w3-hide-small">Photographs </span></h2>
    		  	<p>Blablablabaa</p>
 		    <hr style="width:200px" class="w3-opacity">
 		    <!-- Grid for photos -->
@@ -109,15 +116,15 @@
 		      <div class="w3-half">
 		        <img src="gallery/normal/old/mokki.jpg" style="width:99%" class="w3-hover-sepia jf-img jf-img" onclick="onClick(this)">
 		        <!-- <img src="gallery/normal/old/mokki2.jpg" style="width:99%" class="w3-hover-sepia" onclick="onClick(this)"> -->
-		        <img src="gallery/normal/old/kesa.jpg" style="width:99%" class="w3-hover-sepia jf-img jf-img" onclick="onClick(this)">
+		        <img src="gallery/normal/F0/halli.jpg" style="width:99%" class="w3-hover-sepia jf-img jf-img" onclick="onClick(this)">
 		      </div>
 		      <div class="w3-half">
 		        <!-- <img src="gallery/normal/old/redi.jpg" style="width:99%" class="w3-hover-sepia jf-img" onclick="onClick(this)"> -->
-		        <img src="gallery/normal/old/redi2.jpg" style="width:99%" class="w3-hover-sepia jf-img" onclick="onClick(this)">
+		        <img src="gallery/normal/F0/meira.jpg" style="width:99%" class="w3-hover-sepia jf-img" onclick="onClick(this)">
 		        <img src="gallery/normal/old/redi3.jpg" style="width:99%" class="w3-hover-sepia jf-img" onclick="onClick(this)">
 		        <!-- <img src="gallery/normal/old/redi4.jpg" style="width:99%" class="w3-hover-sepia jf-img" onclick="onClick(this)"> -->
 		      </div>
-			  <button class="w3-col" style="width:100%;padding:1px;margin:5px;cursor: pointer;" onclick="openInNewTab('gallery.html')"> More photos </button>
+			  <button class="w3-col" style="width:100%;padding:1px;margin:5px;cursor: pointer;" onclick="openInNewTab('gallery.html')" onauxclick="openInNewTab('gallery.html')"> More photos </button>
 		    <!-- End photo grid -->
 		    </div>
 			<hr \>
@@ -127,7 +134,7 @@
 		
 		<!-- Software -->
 		  <div class="w3-padding-64 w3-content" id="software">
-		    <h2 class="w3-xxxlarge">Apps<span class="w3-hide-big w3-hide-medium"></span><span class="w3-hide-small"> / Software</span></h2>
+		    <h2 class="w3-xxxlarge">Apps<span class="w3-hide-large w3-hide-medium"></span><span class="w3-hide-small"> / Software</span></h2>
    		  	<p>Blablablabaa</p>
 		    <hr style="width:200px" class="w3-opacity">
 		    <!-- Grid for photos -->
@@ -194,13 +201,17 @@
 			<p>Or if you need to contact me directly:</p>
 			<div class="w3-row-padding" style="margin:0 -15px">
 				<button class="w3-col" style="width:32%;padding:1px;margin:5px;cursor: pointer;" onclick="openInNewTab('mailto:elias.eskelinen@protonmail.com')"> elias.eskelinen@pm.me </button>
-				<button class="w3-col" style="width:32%;padding:1px;margin:5px;cursor: pointer;" onclick="openInNewTab('https://raw.githubusercontent.com/jonnelafin/dotfiles/master/keys/publicKey.asc')"> PGP Key </button>
-				<button class="w3-col" style="width:32%;padding:1px;margin:5px;cursor: pointer;" onclick="openInNewTab('https://raw.githubusercontent.com/jonnelafin/dotfiles/master/keys/ssh.pub')"> SSH Key </button>
+				<button class="w3-col" style="width:32%;padding:1px;margin:5px;cursor: pointer;" onclick="openInNewTab('files_misc/keys/publicKey.asc')"> PGP Key </button>
+				<button class="w3-col" style="width:32%;padding:1px;margin:5px;cursor: pointer;" onclick="openInNewTab('files_misc/keys/ssh.pub')"> SSH Key </button>
 			</div>
 			<hr \>
 		  <!-- End Grid -->
 		  </div>
 		<!-- End Music -->
+		<br \>
+		<br \>
+		<br \>
+		<br \>
 		<hr \>
 	</div>
 	<footer>
