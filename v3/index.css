@@ -1,0 +1,22 @@
+body{
+	background: black;
+	color: white;
+    height: 100%;
+}
+h1 {
+	font-family: 'Cantarell', sans-serif;
+}
+.container{
+    display: flex;
+    height: 100%;
+}
+.menu {
+	width: 200px;
+}
+.content {
+	flex-grow: 1;
+}
+.vl {
+  border-left: 2px solid green;
+  height: 50em;
+}
