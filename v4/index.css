@@ -1,0 +1,113 @@
+/* Color palette: https://coolors.co/272d2d-70a288-dab785-d5896f-ff4f79 */
+/* V2: https://coolors.co/131616-272d2d-4c685b-70a288-a5ad87-c0b286-dab785-d8a07a-d5896f-ff4f79 */
+html{
+	background-color: black;
+	background-size: cover;
+	background-image: url("web.svg");
+	background-size: 100% 100%; 
+	background-attachment: fixed;
+}
+body{
+/*	background: #131616; */
+	
+	color: #DEE3E3;
+	margin-top: 0px;
+	width: 75%;
+	min-width: 0px;
+  	margin: auto;
+}
+.content{
+	text-align: center;
+}
+.body{
+	margin-top: auto;
+	backdrop-filter: blur(5px);
+	background: rgba(255,255,255,.04);
+	padding-bottom: 1em;
+}
+.logoGroup{
+	background: #272d2d;
+	margin-top: auto;
+	padding-bottom: 5px;
+}
+.rataLogo{
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-left: .5em;
+	padding-right: .5em;
+}
+.rataLogo-dark{
+	font-family: Montserrat Medium;
+	font-size: 350%;
+	color: #DEE3E3; 
+}
+
+.rataLogo-light{
+	font-family: Montserrat Medium;
+	font-size: 350%;
+	color: #272d2d;
+}
+
+.rataLogo-small{
+	font-size: 75%;
+}
+
+.rataLogo-sub{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 200%;
+	color: #424C4C;
+}
+
+.title-hr .hrh {
+    width: calc(15%);
+    display: inline-block;
+    margin: 5px 10px;
+    border-top: 1px solid #e5e5e5;
+}
+.hrh {
+	margin-left: 0px !important;
+	margin-right:0px !important;
+}
+.hrhl{/*
+	margin-left: 0px !important;
+	margin-right:33% !important;
+   	text-align: left;*/
+}
+.hrhr {
+	
+}
+.first{
+	margin-top: 0px;
+	padding-top: .5em;
+}
+.hr {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.hrs {
+	color: #424C4C;
+}
+/* Links */
+
+ /* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: #70A288;
+}
+
+/* selected link */
+a:active {
+  color: #4C685B;
+} 
+
+/* /Links */
