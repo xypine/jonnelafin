@@ -8,32 +8,43 @@ h1 {
 	margin-bottom: 0px;
 	margin-top: 0px;
 }
+.logo {
+	background: #363636;
+	letter-spacing: .11em;
+	padding: .333em;
+}
 .container{
     display: flex;
 	height: calc(100% - 4em);	
 }
 .menu {
-	margin: 1em;
+	background: #4d836a;
+	color: black;
+	padding: 1em;
+	margin: 0px;
 	width: 10em;
 	overflow-wrap: break-word;
 	/* overflow: scroll; */
 }
+.menuhr {
+	border: 2.5px solid black;
+}
 .content {
 	margin: 1em;
 	flex-grow: 1;
-	overflow: scroll;
+	/* overflow: scroll; */
 }
 .vl {
 /*	flex-grow: 1;*/
 	margin-right: 0px;
 	margin-left: 0px;
-	border-left: 5px solid gray;
+	border-left: 5px solid #4d836a;
 	height: 100%;
 }
 .hr {
 	margin-bottom: 0px;
 	margin-top: 0px;
-	border: 2.5px solid gray;
+	border: 2.5px solid #4d836a;
 	color: gray;
 }
 
