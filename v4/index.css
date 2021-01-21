@@ -3,7 +3,7 @@
 html{
 	background-color: black;
 	background-size: cover;
-	background-image: url("web.svg");
+	/*background-image: url("web.svg");*/
 	background-size: 100% 100%; 
 	background-attachment: fixed;
 }
@@ -12,7 +12,7 @@ body{
 	
 	color: #DEE3E3;
 	margin-top: 0px;
-	width: 75%;
+	width: 100%;
 	min-width: 0px;
   	margin: auto;
 }
@@ -21,13 +21,21 @@ body{
 }
 .body{
 	margin-top: auto;
-	backdrop-filter: blur(5px);
-	background: rgba(255,255,255,.04);
+	/*backdrop-filter: blur(5px);
+	background: rgba(255,255,255,.04);*/
+	background: rgb(0,0,0);
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 95.555555555%, rgba(39,45,45,1) 96%);
 	padding-bottom: 1em;
 }
 .logoGroup{
 	background: #272d2d;
 	margin-top: auto;
+	padding-bottom: 5px;
+}
+.footer{
+	background: #272d2d;
+	margin-top: auto;
+	padding-top: 5px;
 	padding-bottom: 5px;
 }
 .rataLogo{
@@ -66,6 +74,7 @@ body{
     border-top: 1px solid #e5e5e5;
 }
 .hrh {
+	display: none !important;
 	margin-left: 0px !important;
 	margin-right:0px !important;
 }
@@ -87,6 +96,9 @@ body{
 }
 .hrs {
 	color: #424C4C;
+}
+.icon {
+	height: 1.5em;
 }
 /* Links */
 
