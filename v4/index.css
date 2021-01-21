@@ -16,15 +16,36 @@ body{
 	min-width: 0px;
   	margin: auto;
 }
+a {
+	font-size: 120%;
+}
 .content{
 	text-align: center;
+}
+.sitemap{
+	background: rgb(0,0,0);
+	background: linear-gradient(0deg, #1b2020 0%, #1b2020 61.555%, rgba(39,45,45,1) 62%);
+}
+.out{
+	background: #161a1a;
+	background: linear-gradient(0deg, #161a1a 0%, #161a1a 92.555%, #1b2020 93%);
+	padding-bottom: 1em;
+	
+}
+.contact{
+	background: #090b0b;
+	background: linear-gradient(0deg, #060a0a 0%, #060a0a 81.555%, #161a1a 82%);
+}
+.otherstuff{
+	background: black;
+	background: linear-gradient(0deg, black 0%, black 81.555%, #060a0a 82%);
+	padding-bottom: 1em;
 }
 .body{
 	margin-top: auto;
 	/*backdrop-filter: blur(5px);
 	background: rgba(255,255,255,.04);*/
-	background: rgb(0,0,0);
-	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 95.555555555%, rgba(39,45,45,1) 96%);
+	background: #1b2020;
 	padding-bottom: 1em;
 }
 .logoGroup{
@@ -46,12 +67,14 @@ body{
 }
 .rataLogo-dark{
 	font-family: Montserrat Medium;
-	font-size: 350%;
+	letter-spacing: .1em;
+	font-size: 300%;
 	color: #DEE3E3; 
 }
 
 .rataLogo-light{
 	font-family: Montserrat Medium;
+	letter-spacing: .1em;
 	font-size: 350%;
 	color: #272d2d;
 }
@@ -86,6 +109,12 @@ body{
 .hrhr {
 	
 }
+.break{
+/*	background: black; */
+	padding-left: .6em;
+	padding-right: .6em;
+	padding-top: .3em;
+}
 .first{
 	margin-top: 0px;
 	padding-top: .5em;
@@ -95,10 +124,14 @@ body{
 	margin-bottom: 0px;
 }
 .hrs {
+	display: none !important;
 	color: #424C4C;
 }
 .icon {
 	height: 1.5em;
+}
+.icon2 {
+	width: 1.5em;
 }
 /* Links */
 
