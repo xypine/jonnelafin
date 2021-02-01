@@ -1,117 +1,76 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Jonnelafin's Profile</title>
-		<link rel="icon" href="/favicon.png">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta charset="UTF-8">
-		<link rel="stylesheet" media="screen" href="fonts/now.css" type="text/css"/>
-		<link rel="stylesheet" type="text/css" href="theme.css">
-		<link rel="stylesheet" href="w3.css"> 
-		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
-	</head>
-	<body>
-		<!-- 2.0 -->
-		<a href="/2.0/index.html" id="2.0" style="font-size: 500%;display:none;"> Visit 2.0 </a>
-		<!-- /2.0 -->
-		   <script>0</script>
-		<!-- Modal for full size images on click-->
-		<div id="modal01" class="w3enabled w3-modal w3-black" onclick="this.style.display='none'">
-		  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-		  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-		    <img id="img01" class="w3-image">
-		    <p id="caption" class="w3-opacity w3-large"></p>
-		  </div>
+<!-- Index.html Revision 4 -->
+<!-- Don't ask about rev2 or rev3. -->
+<head>
+	<title>Jonnelafin</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="UTF-8">
+	
+	<link rel="icon" href="favicon.png">
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<div class="content">
+		<div class="logoGroup">
+			<h1 class="rataLogo rataLogo-dark"><span class="rataLogo-small">JONNELAFIN</span> </h1>
+			<!--<h2 class="rataLogo-dark rataLogo-sub">&trade;  </h2>-->
 		</div>
-		<div id="Links" class="Links">
-			<a href="https://github.com/jonnelafin">Github</a><br \>
-			<a href="https://steamcommunity.com/id/Jonnelafin/">Steam profile</a><br \>
-			<hr \>
-			<a href="music.html">Music Archive</a><br \>
-			<hr \>
-			<a href="https://jonnelafin.itch.io/">Games</a><br \>
-			<a href="https://soundcloud.com/jonnelafin">Music</a><br \>
-			<a href="https://gamebanana.com/members/1651842">CSGO Maps</a><br \>
-			<a href="https://steamcommunity.com/id/Jonnelafin/myworkshopfiles/?appid=730&sort=score&browsefilter=myfiles&view=imagewall">CSGO Workshop</a><br \>
-	                <a href="https://www.youtube.com/channel/UCwGtFQ7i5Le-K58TG_r6dug">Youtube</a><br \>
-			<hr \>
-	                <a href="https://raw.githubusercontent.com/jonnelafin/dotfiles/master/keys/ssh.pub">Public SSH key</a><br \>
-			<a href="https://raw.githubusercontent.com/jonnelafin/dotfiles/master/keys/publicKey.asc">Public PGP key</a><br \>
-			<a href="mailto:elias.eskelinen@protonmail.com">Send email</a><br \>
-		</div>
-		<br \>
-		<hr \>
-		<div class="indetail">
-			<p class="l1 Label notop nound"> Software <p>
-			<div class="tray w3-container">
-				<div style="background:dark-gray;width:20%;height:10em;border:2px solid gray;text-align: center !important;" class="w3-center">
-					<a href="https://kirjat.ml"> Kirjat.ml </a>
+		<hr class="hr"\ style="display:none;">
+		<!--
+		<form method="POST" data-netlify="true">
+			<label for="ftext">email:</label><br>
+			<input type="text" id="ftext" name="ftext"><br>
+			<input type="submit" value="Subscribe">
+		</form>
+		-->
+		<div class="body">
+			<div id="Links" class="sitemap collapsable">
+				<h2 onclick="haitari(this);" class="title-hr"><hr class="hrh"/> <span class="break" style="background:#1b2020;"> Random links </span> <hr class="hrh"/></h2>
+				<a href="https://github.com/jonnelafin"> <img src="icons_v4/i/light/github.svg" class="icon" \> Github</a> | 
+				<a href="https://steamcommunity.com/id/Jonnelafin/"> <img src="icons_v4/Steam.svg" class="icon" \> Steam</a><br \>
+				<hr class="hrs"\>
+				<a href="https://jonnelafin.itch.io/"> <img src="icons_v4/itch-white.svg" class="icon" \> Games</a> | 
+				<a href="https://soundcloud.com/jonnelafin"> <img src="icons_v4/i/soundcloud.svg" class="icon2" \> Music</a> |
+		                <a href="https://www.youtube.com/channel/UCwGtFQ7i5Le-K58TG_r6dug"> <img src="icons_v4/i/youtube.svg" class="icon2" \> Youtube</a><br \>
+				<a href="https://gamebanana.com/members/1651842">CSGO Maps</a> | 
+				<a href="https://steamcommunity.com/id/Jonnelafin/myworkshopfiles/?appid=730&sort=score&browsefilter=myfiles&view=imagewall">CSGO Workshop</a><br \>
+				<hr class="hrs"\>
+			</div>
+			<div id="site" class="Links out collapsable">
+				<h2 onclick="haitari(this);" class="title-hr first"><hr class="hrh"/> <span class="break" style="background: #161a1a;">On This Site</span> <hr class="hrh"/></h2>
+				<div id="Links" class="Links">
+					<a href="music.html">Music Archive</a><br \>
 				</div>
 			</div>
-			<p class="l1 Label notop nound"> Gallery <p>
-			<!-- Image gallery -->
-			<p class="l2 Label notop nound halfund"> Recent Photographs </p>
-			<div class="tray w3enabled w3-container w3-row">
-				<img class="trayImg w3-quarter w3-hover-sepia" src="img_src/redi.jpg" alt="Photo of REDI" onclick="onClick(this)"></img>
-				<img class="trayImg w3-quarter w3-hover-sepia" src="img_src/mokki2.jpg" alt="Photo of Muuratjärvi, Finland" onclick="onClick(this)"></img>
-				<div class="trayGroup w3-quarter">
-					<img class="trayImg w3-hover-sepia" src="img_src/kesa2.jpg" alt="A Photo at Dawn" onclick="onClick(this)"></img>
-					<br \>
-					<img class="trayImg w3-hover-sepia" src="img_src/kesa.jpg" alt="A Summer-y photo depicting a summer-y sunset." onclick="onClick(this)"></img>
-				</div>
-				<div class="trayGroup w3-quarter">
-					<img class="trayImg w3-hover-sepia" src="img_src/redi2.jpg" alt="Another photo of REDI" onclick="onClick(this)"></img>
-					<br \>
-					<img class="trayImg w3-hover-sepia" src="img_src/mokki.jpg" alt="Another photo of Muuratjärvi, Finland" onclick="onClick(this)"></img>
-				</div>
+			<div id="contact" class="contact collapsable">
+				<h2 onclick="haitari(this);" class="title-hr" style="margin-top: 0px;padding-top: .2em;"><hr class="hrh"/> <span class="break" style="background:#060a0a;"> Direct contact </span> <hr class="hrh"/></h2>
+		                <a href="https://raw.githubusercontent.com/jonnelafin/dotfiles/master/keys/ssh.pub">Public SSH key</a><br \>
+				<a href="https://raw.githubusercontent.com/jonnelafin/dotfiles/master/keys/publicKey.asc">Public PGP key</a><br \>
+				<a href="mailto:elias.eskelinen@protonmail.com">Send email</a><br \>
 			</div>
-			<p class="l2 Label notop nound"> Games </p>
-			<p class="l3 Label notop faded halfund"> (Not <i>that</i> good.) </p>
-			<div class="tray">
-				<iframe sandbox="allow-same-origin" src="https://itch.io/embed/676733?bg_color=001828&amp;fg_color=ffffff&amp;link_color=b58000&amp;border_color=2d4f78" width="32%" height="167" frameborder="0"><a href="https://jonnelafin.itch.io/rps">RPS by jonnelafin</a></iframe>
-				<iframe sandbox="allow-same-origin" src="https://itch.io/embed/697338?bg_color=000000&amp;fg_color=ffffff&amp;link_color=29aaa3&amp;border_color=613333" width="32%" height="167" frameborder="0"><a href="https://jonnelafin.itch.io/control">100% Control by jonnelafin</a></iframe>
-				<iframe src="https://itch.io/embed/756223?linkback=true&amp;bg_color=000623&amp;fg_color=dbdbdb&amp;link_color=fb7e14&amp;border_color=343250" width="32%" height="167" frameborder="0"><a href="https://jonnelafin.itch.io/deepstuck-wgj">DeepStuck by jonnelafin</a></iframe>
-			</div>
-			<aside id="leftnav" class="hidden">
-        		aside left
-			</aside>
-
-			<aside id="rightnav" class="hidden">
-        		aside right
-			</aside>
-			<!--
-			<article class="hidden">
-				<p>
-					
-					
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In volutpat felis a massa dictum, ac elementum eros euismod. In facilisis, risus non ultrices aliquet, enim lacus vestibulum est, in convallis lectus ipsum quis ex. Praesent euismod lorem ullamcorper, iaculis ex eu, tempor ligula. Quisque in est suscipit, congue nunc nec, fringilla est. Aenean nec mi ut tortor fringilla semper in a odio. Ut eu neque sit amet erat maximus dignissim. Pellentesque commodo bibendum lorem quis ornare. Sed venenatis nulla sed purus commodo tincidunt. Phasellus lorem justo, laoreet at ex sed, dignissim maximus risus. In eleifend eros non mattis hendrerit. Proin sollicitudin velit sed lectus ultrices, nec tempus augue porta.
-					
-					Praesent congue justo sapien, ut sagittis est eleifend ac. Suspendisse non dolor leo. Vivamus ut tellus feugiat, posuere urna at, sagittis quam. Ut dignissim lacinia justo in consequat. Sed bibendum eros vel condimentum semper. Nunc at lorem ligula. Mauris blandit libero suscipit dolor consectetur lobortis. Phasellus laoreet id quam quis vehicula. Donec vel sapien id metus aliquam imperdiet. Etiam aliquam eu urna sed consequat. Praesent non nunc eu ipsum viverra pulvinar.
-					
-					Aliquam et magna suscipit, sollicitudin est vitae, vulputate risus. Phasellus nulla tellus, placerat sed sagittis eu, aliquam aliquam risus. Aenean non risus est. Donec nec sem vitae mauris luctus laoreet. Suspendisse nec massa vitae est rutrum rhoncus. Sed condimentum fermentum blandit. Fusce euismod malesuada mi egestas rhoncus. Aenean venenatis, justo sed laoreet pharetra, ante augue lacinia neque, in tempor lorem erat eget velit. Vivamus mattis magna at consectetur vulputate. Nam vitae erat in nibh pretium ultricies. Nulla malesuada lobortis dolor sit amet auctor. Cras ut pretium nunc. Cras euismod enim a massa vulputate, consequat egestas leo consequat. Nunc elementum, orci nec tempus consequat, odio lacus rutrum lorem, at faucibus enim nisi at velit. Ut vehicula ante orci, at auctor mi pharetra sit amet.
-					
-					Suspendisse porta ex vel facilisis lobortis. Donec tincidunt lacinia felis, sed vulputate velit facilisis nec. Aenean auctor magna vitae posuere cursus. Donec luctus, sem a aliquet congue, mi diam volutpat est, vel tincidunt nibh nunc a orci. Nunc id imperdiet purus. Donec at varius ipsum. Donec dolor leo, vehicula ac dui ac, convallis maximus sapien. Aenean sit amet mi tempus, scelerisque leo vitae, aliquam lorem. Vestibulum pulvinar urna odio, eu vehicula eros imperdiet vel. Phasellus fringilla, magna sed auctor porta, lorem turpis congue mi, accumsan consectetur magna felis eu elit. Quisque a iaculis sapien. Praesent placerat justo vel ipsum ultricies luctus. Pellentesque et ante pulvinar, aliquam enim ut, venenatis ante. Proin id neque mattis, rhoncus tellus condimentum, ullamcorper sem.
-					
-					Nullam ornare odio sed varius commodo. Suspendisse lacus nibh, egestas eu fermentum at, laoreet quis odio. Donec faucibus consequat ex ut mollis. Donec tincidunt vel odio eu convallis. Integer nulla nulla, dictum nec ullamcorper in, ultricies nec augue. Quisque luctus at nunc pretium semper. Donec dictum aliquam accumsan. Vivamus molestie massa mauris, sit amet tempor erat tristique in. Proin in felis euismod, pulvinar erat vel, dapibus augue. Praesent ut velit a neque iaculis dictum. Integer suscipit malesuada augue, quis tempor nulla ultricies sed. 
-				</p>	
-			</article>
-			-->
 		</div>
-	</body>
-	<footer>
-		   <script>0</script>
-		<hr \>
-		<p id="https://github.com/jonnelafin/jonnelafin.github.io" class="Label l3 h2" onclick="a(this)" style="cursor: pointer;"> See this page on github </p>
-		<p id="/2.0/index.html" class="Label l3 h2" onclick="a(this)" style="cursor: pointer;"> Try 2.0 (Really in progress)</p>
-		<script type="text/javascript" src="modal.js"></script>
-		<script type="text/javascript">
-			console.log("Stop snooping around :D");
-			console.log("The full source code for this site is here: https://github.com/jonnelafin/jonnelafin.github.io");
-			if (location.hostname === "localhost" || location.hostname === "127.0.0.1"){
-				console.log("Localhost detected!");
-				document.getElementById("2.0").style.display = "block";
-			}
-			console.log("Please remember that any and all code on this site is licensed under the MIT License: https://github.com/jonnelafin/jonnelafin.github.io/blob/master/LICENSE");
-		</script>
-	</footer>
+		<hr class="hr"\>
+		<div class="footer">
+			<a href="https://github.com/jonnelafin/jonnelafin.github.io">Source code</a> | 
+			<a href="/v1">Visit 1.0</a>
+		</div>
+	</div>
+</body>
+<footer>
+<script>
+    function haitari(target){
+        return;
+        let parent = target.parentElement;
+        if(parent.classList.contains("collapsed")){
+            parent.classList.remove("collapsed");
+        }
+        else{
+            parent.classList.add("collapsed");
+        }
+    }
+</script>
+</footer>
 </html>

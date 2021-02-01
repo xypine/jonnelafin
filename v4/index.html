@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<!-- Index.html Revision 4 -->
+<!-- Don't ask about rev2 or rev3. -->
 <head>
 	<title>Jonnelafin</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,39 +27,50 @@
 		</form>
 		-->
 		<div class="body">
-			<div id="site" class="sitemap">
-				<h2 class="title-hr first"><hr class="hrh"/> <span class="break" style="background:#1b2020;">On This Site</span> <hr class="hrh"/></h2>
-				<div id="Links" class="Links">
-					<a href="music.html">Music Archive</a><br \>
-				</div>
-			</div>
-			<div id="Links" class="Links out">
-				<h2 class="title-hr"><hr class="hrh"/> <span class="break" style="background: #161a1a;"> Random links </span> <hr class="hrh"/></h2>
-				<a href="https://github.com/jonnelafin"> <img src="icons/i/light/github.svg" class="icon" \> Github</a> | 
-				<a href="https://steamcommunity.com/id/Jonnelafin/"> <img src="icons/Steam.svg" class="icon" \> Steam</a><br \>
+			<div id="Links" class="sitemap collapsable">
+				<h2 onclick="haitari(this);" class="title-hr"><hr class="hrh"/> <span class="break" style="background:#1b2020;"> Random links </span> <hr class="hrh"/></h2>
+				<a href="https://github.com/jonnelafin"> <img src="icons_v4/i/light/github.svg" class="icon" \> Github</a> | 
+				<a href="https://steamcommunity.com/id/Jonnelafin/"> <img src="icons_v4/Steam.svg" class="icon" \> Steam</a><br \>
 				<hr class="hrs"\>
-				<a href="https://jonnelafin.itch.io/"> <img src="icons/itch-white.svg" class="icon" \> Games</a> | 
-				<a href="https://soundcloud.com/jonnelafin"> <img src="icons/i/soundcloud.svg" class="icon2" \> Music</a> |
-		                <a href="https://www.youtube.com/channel/UCwGtFQ7i5Le-K58TG_r6dug"> <img src="icons/i/youtube.svg" class="icon2" \> Youtube</a><br \>
+				<a href="https://jonnelafin.itch.io/"> <img src="icons_v4/itch-white.svg" class="icon" \> Games</a> | 
+				<a href="https://soundcloud.com/jonnelafin"> <img src="icons_v4/i/soundcloud.svg" class="icon2" \> Music</a> |
+		                <a href="https://www.youtube.com/channel/UCwGtFQ7i5Le-K58TG_r6dug"> <img src="icons_v4/i/youtube.svg" class="icon2" \> Youtube</a><br \>
 				<a href="https://gamebanana.com/members/1651842">CSGO Maps</a> | 
 				<a href="https://steamcommunity.com/id/Jonnelafin/myworkshopfiles/?appid=730&sort=score&browsefilter=myfiles&view=imagewall">CSGO Workshop</a><br \>
 				<hr class="hrs"\>
 			</div>
-			<div id="contact" class="contact">
-				<h2 class="title-hr" style="margin-top: 0px;padding-top: .2em;"><hr class="hrh"/> <span class="break" style="background:#060a0a;"> Direct contact </span> <hr class="hrh"/></h2>
+			<div id="site" class="Links out collapsable">
+				<h2 onclick="haitari(this);" class="title-hr first"><hr class="hrh"/> <span class="break" style="background: #161a1a;">On This Site</span> <hr class="hrh"/></h2>
+				<div id="Links" class="Links">
+					<a href="music.html">Music Archive</a><br \>
+				</div>
+			</div>
+			<div id="contact" class="contact collapsable">
+				<h2 onclick="haitari(this);" class="title-hr" style="margin-top: 0px;padding-top: .2em;"><hr class="hrh"/> <span class="break" style="background:#060a0a;"> Direct contact </span> <hr class="hrh"/></h2>
 		                <a href="https://raw.githubusercontent.com/jonnelafin/dotfiles/master/keys/ssh.pub">Public SSH key</a><br \>
 				<a href="https://raw.githubusercontent.com/jonnelafin/dotfiles/master/keys/publicKey.asc">Public PGP key</a><br \>
 				<a href="mailto:elias.eskelinen@protonmail.com">Send email</a><br \>
 			</div>
-			<div class="otherstuff">
-				<h2 class="title-hr" style="margin-top: 0px;padding-top: .2em;"><hr class="hrh"/> <span class="break" style="background:black;"> Direct contact </span> <hr class="hrh"/></h2>
-				<a href="mailto:system@ratasystems.fi"> Inspirational shit. </a>
-			</div>
 		</div>
 		<hr class="hr"\>
 		<div class="footer">
-			<a>Source code</a>
+			<a href="https://github.com/jonnelafin/jonnelafin.github.io">Source code</a> | 
+			<a href="/v1">Visit 1.0</a>
 		</div>
 	</div>
 </body>
+<footer>
+<script>
+    function haitari(target){
+        return;
+        let parent = target.parentElement;
+        if(parent.classList.contains("collapsed")){
+            parent.classList.remove("collapsed");
+        }
+        else{
+            parent.classList.add("collapsed");
+        }
+    }
+</script>
+</footer>
 </html>
