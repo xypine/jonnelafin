@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: jonnelafin.github.io
+Token: 578fabfd7eeefb55b138c5ffe588a2252a77a58db92d4cbbaf746826dc9630b9
