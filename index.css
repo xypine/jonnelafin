@@ -95,14 +95,14 @@ a {
 	padding-right: .5em;
 }
 .rataLogo-dark{
-	font-family: Montserrat Medium;
+	font-family: Montserrat Medium, arial;
 	letter-spacing: .1em;
 	font-size: 300%;
 	color: #DEE3E3; 
 }
 
 .rataLogo-light{
-	font-family: Montserrat Medium;
+	font-family: Montserrat Medium, arial;
 	letter-spacing: .1em;
 	font-size: 350%;
 	color: #272d2d;
