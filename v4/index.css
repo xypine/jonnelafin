@@ -2,6 +2,14 @@
 
 /* Color palette: https://coolors.co/272d2d-70a288-dab785-d5896f-ff4f79 */
 /* V2: https://coolors.co/131616-272d2d-4c685b-70a288-a5ad87-c0b286-dab785-d8a07a-d5896f-ff4f79 */
+
+:root{
+	--apps-c: #212828;
+	--rand-c: #1b2020;
+	--site-c: #161a1a;
+	--contact-c: #0e1111;
+}
+
 html{
 	background-color: black;
 	background-size: cover;
@@ -26,20 +34,27 @@ a {
 }
 
 
-
+.apps{
+	background: #272d2d;
+}
+.appLinks{
+	background: var(--apps-c);
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
 .sitemap{
-	background: rgba(39,45,45,1);
+	background: var(--apps-c)/*rgba(39,45,45,1)*/;
 /*	background: linear-gradient(0deg, #1b2020 0%, #1b2020 75.555%, rgba(39,45,45,1) 76%); */
 	padding-bottom: 0;
 }
 .out{
-	background: #1b2020;
+	background: var(--rand-c);
 /*	background: linear-gradient(0deg, #161a1a 0%, #161a1a 61.555%, #1b2020 62%); */
 	padding-bottom: 0;
 	
 }
 .contact{
-	background: #161a1a;
+	background: var(--site-c);
 /*	background: linear-gradient(0deg, #060a0a 0%, #060a0a 81.555%, #161a1a 82%);
 	padding-bottom: 1em;*/
 }
@@ -62,15 +77,15 @@ a {
 	margin-top: 0;
 	padding-top: 1em;
 	padding-bottom: 1em;
-	background: #1b2020;
+	background: var(--rand-c);
 }
 .Links {
 	padding-top: 1em;
 	padding-bottom: 1em;
-	background: #161a1a;
+	background: var(--site-c);
 }
 .contactContainer {
-	background: #0e1111;
+	background: var(--contact-c);
 	padding-top: 1em;
 	padding-bottom: 1em;
 }
@@ -83,7 +98,7 @@ a {
 }
 .footer{
 	background: #272d2d;
-	background: linear-gradient(0deg, black 0%, #0e1111 100%);
+	background: linear-gradient(0deg, black 0%, var(--contact-c) 100%);
 	margin-top: auto;
 	padding-top: 1em;
 	padding-bottom: 2em;
@@ -95,7 +110,7 @@ a {
 	padding-right: .5em;
 }
 .rataLogo-dark{
-	font-family: Montserrat Medium;
+	font-family: Montserrat Medium, arial;
 	letter-spacing: .1em;
 	font-size: 300%;
 	color: #DEE3E3; 

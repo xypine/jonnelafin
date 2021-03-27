@@ -28,8 +28,14 @@
 		</form>
 		-->
 		<div class="body">
+			<div id="apps" class="apps collapsable">
+				<h2 class="title-hr first"><hr class="hrh"/> <span class="break" style="background: var(--apps-c);">Apps</span> <hr class="hrh"/></h2>
+				<div id="appLinks" class="appLinks">
+					<a href="https://Kirjat.ml">Kirjat.ml</a><br \>
+				</div>
+			</div>
 			<div id="Links" class="sitemap collapsable">
-				<h2 class="title-hr"><hr class="hrh"/> <span class="break" style="background:#1b2020;"> Random links </span> <hr class="hrh"/></h2>
+				<h2 class="title-hr first" style=""><hr class="hrh"/> <span class="break" style="background:var(--rand-c);"> Random links </span> <hr class="hrh"/></h2>
 				<div class="linksContainer">
 					<a href="https://github.com/jonnelafin"> <img alt="github logo" src="icons_v4/i/light/github.svg" class="icon" \> Github</a> | 
 					<a href="https://steamcommunity.com/id/Jonnelafin/"> <img alt="steam logo" src="icons_v4/Steam.svg" class="icon" \> Steam</a><br \>
@@ -43,15 +49,16 @@
 				<hr class="hrs"\>
 			</div>
 			<div id="site" class="out collapsable">
-				<h2 class="title-hr first"><hr class="hrh"/> <span class="break" style="background: #161a1a;">On This Site</span> <hr class="hrh"/></h2>
+				<h2 class="title-hr first"><hr class="hrh"/> <span class="break" style="background: var(--site-c);">On This Site</span> <hr class="hrh"/></h2>
 				<div id="Links" class="Links">
 					<a href="music.html">Music Archive</a><br \>
 				</div>
 			</div>
+			
 			<div id="apps" class="apps">
 			</div>
 			<div id="contact" class="contact collapsable">
-				<h2 class="title-hr" style="margin-top: 0px;padding-top: .2em;"><hr class="hrh"/> <span class="break" style="background:#0e1111;"> Direct contact </span> <hr class="hrh"/></h2>
+				<h2 class="title-hr" style="margin-top: 0px;padding-top: .2em;"><hr class="hrh"/> <span class="break" style="background:var(--contact-c);"> Direct contact </span> <hr class="hrh"/></h2>
 				<div class="contactContainer">
                 	<a href="https://raw.githubusercontent.com/jonnelafin/dotfiles/master/keys/ssh.pub">Public SSH key</a><br \>
 					<a href="https://raw.githubusercontent.com/jonnelafin/dotfiles/master/keys/publicKey.asc">Public PGP key</a><br \>
@@ -70,13 +77,14 @@
 <script>
     function haitari(target){
         return;
+        /*
         let parent = target.parentElement;
         if(parent.classList.contains("collapsed")){
             parent.classList.remove("collapsed");
         }
         else{
             parent.classList.add("collapsed");
-        }
+        }*/
     }
 </script>
 </footer>
