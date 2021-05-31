@@ -1,0 +1,65 @@
+body{
+	margin: 0;
+}
+
+div.centered{
+	width: 50%;
+	margin: auto;
+}
+
+.title{
+	margin-bottom: 0;
+	font-family: Cantarell,Ubuntu,Segoe UI,Montserrat Medium;
+}
+.subtitle{
+	margin-top: 0;
+	font-family: Cantarell,Ubuntu,Segoe UI,Montserrat Medium;
+}
+
+.buttongrid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+	grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
+	gap: 10px;
+	grid-auto-flow: dense;
+	min-height: 10em;
+}
+
+button{
+	border: 1px solid;
+	border-radius: .5em;
+	background: none;
+	box-shadow: inset 0 0 1em black;
+	border: 1px solid #404040;
+	color: var(--main-link-color);
+	transition: box-shadow .25s;
+	cursor: pointer;
+}
+button:hover{
+	box-shadow: inset 0 0 0.33em black;
+}
+
+button.github{
+	background: #1177AA;
+}
+
+button.steam{
+	background: #1155BB;
+}
+
+button.itch{
+	background: #AA3366;
+}
+
+button.youtube{
+	background: #AA2222;
+}
+
+a.btn{
+	text-decoration: none;
+	color: var(--main-font-color);
+}
+
+.footer{
+	padding-bottom: 1em;
+}
