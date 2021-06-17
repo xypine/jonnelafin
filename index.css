@@ -10,6 +10,11 @@
 	--contact-c: #0e1111;
 }
 
+@font-face {
+    font-family: "Montserrat Medium";
+    src: url("./fonts_v4/Montserrat-Medium.ttf");
+}
+
 html{
 	background-color: black;
 	background-size: cover;
