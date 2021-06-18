@@ -9,11 +9,11 @@ div.centered{
 
 .title{
 	margin-bottom: 0;
-	font-family: Cantarell,Ubuntu,Segoe UI,Montserrat Medium;
+	font-family: Cantarell,Ubuntu,Segoe UI,Montserrat Medium, arial;
 }
 .subtitle{
 	margin-top: 0;
-	font-family: Cantarell,Ubuntu,Segoe UI,Montserrat Medium;
+	font-family: Cantarell,Ubuntu,Segoe UI,Montserrat Medium, arial;
 }
 
 .buttongrid{
