@@ -20,16 +20,35 @@ div.centered{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 	grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
-	gap: 10px;
+	gap: 1.5em;
 	grid-auto-flow: dense;
 	min-height: 10em;
 }
-
+@keyframes shadowsFadeIn {
+    0% { box-shadow: .25em .25em .66em #000000,-.25em -.25em .66em #333239; }
+    100% { box-shadow: .1em .1em .66em #000000,-.1em -.1em .66em #333239; }
+}
+@keyframes shadowsFadeOut {
+    0% { box-shadow: .1em .1em .66em #000000,-.1em -.1em .66em #333239; }
+    100% { box-shadow: .25em .25em .66em #000000,-.25em -.25em .66em #333239; }
+}
+@keyframes shadowFadeIn {
+    0% { box-shadow: inset .25em .25em 0 rgba(0,0,0,0), inset -.25em -.25em 0 rgba(0,0,0,0), .25em .25em .66em #000000,-.25em -.25em .66em #333239; }
+    50% { box-shadow: none; }
+    100% { inset .25em .25em .66em #000000, inset -.25em -.25em .66em #222222, .25em .25em 0 rgba(0,0,0,0),-.25em -.25em 0 rgba(0,0,0,0); }
+}
+@keyframes shadowFadeOut {
+/    0% { box-shadow: inset .25em .25em .66em #000000, inset -.25em -.25em .66em #222222, .25em .25em 0 rgba(0,0,0,0),-.25em -.25em 0 rgba(0,0,0,0); }
+    50% { box-shadow: none; }
+    100% { box-shadow: inset .25em .25em 0 rgba(0,0,0,0), inset -.25em -.25em 0 rgba(0,0,0,0), .25em .25em .66em #000000,-.25em -.25em .66em #333239; }
+}
 button{
+	animation: shadowsFadeOut .2s;
 	border: 1px solid;
 	border-radius: .5em;
 	background: none;
-	box-shadow: inset 0 0 2em #00000000;
+/*	box-shadow: inset 0 0 2em #000000;*/
+	box-shadow: .25em .25em .66em #000000,-.25em -.25em .66em #333239;
 	border: 1px solid #404040;
 	color: var(--main-font-color);
 	transition: box-shadow .25s, background-size .25s;
@@ -45,13 +64,15 @@ button.desc::after{
 	color: var(--main-font-color) !important;
 	display: block;
 	overflow: clip;
-	white-space: pre;
+	white-space: pre-line;
 	height: 0;
 	border-top: 1px solid #77777700;
 	transition: height .25s, border .5s;
 }
 button:hover{
-	box-shadow: inset 0 0 0.33em #00000000;
+/*	box-shadow: inset 0 0 0.33em #000000;*/
+	animation: shadowFadeIn .1s;
+	box-shadow:  inset .25em .25em .66em #00000099, inset -.25em -.25em .66em #222222, .25em .25em 0 rgba(0,0,0,0),-.25em -.25em 0 rgba(0,0,0,0);
 	background-size: 100% !important;
 }
 button.desc:hover::after{
