@@ -1,5 +1,7 @@
 body{
 	margin: 0;
+	height: 100%;
+	box-shadow: 0 50vh 0 50vh #171717;
 }
 
 div.centered{
