@@ -29,31 +29,31 @@ div.centered{
 	min-height: 10em;
 }
 @keyframes shadowsFadeIn {
-    0% { box-shadow: .25em .25em .66em #000000,-.25em -.25em .66em #333239; }
-    100% { box-shadow: .1em .1em .66em #000000,-.1em -.1em .66em #333239; }
+    0% { box-shadow: var(--button-shadow-offset) var(--button-shadow-offset) var(--button-shadow-size) var(--button-shadow-color),var(--negative-button-shadow-offset) var(--negative-button-shadow-offset) var(--button-shadow-size) var(--button-highlight-color); }
+    100% { box-shadow: .var(--button-shadow-size2) .var(--button-shadow-size2) var(--button-shadow-size) var(--button-shadow-color),-.var(--button-shadow-size2) -.var(--button-shadow-size2) var(--button-shadow-size) var(--button-highlight-color); }
 }
 @keyframes shadowsFadeOut {
-    0% { box-shadow: .1em .1em .66em #000000,-.1em -.1em .66em #333239; }
-    100% { box-shadow: .25em .25em .66em #000000,-.25em -.25em .66em #333239; }
+    0% { box-shadow: .var(--button-shadow-size2) .var(--button-shadow-size2) var(--button-shadow-size) var(--button-shadow-color),-.var(--button-shadow-size2) -.var(--button-shadow-size2) var(--button-shadow-size) var(--button-highlight-color); }
+    100% { box-shadow: var(--button-shadow-offset) var(--button-shadow-offset) var(--button-shadow-size) var(--button-shadow-color),var(--negative-button-shadow-offset) var(--negative-button-shadow-offset) var(--button-shadow-size) var(--button-highlight-color); }
 }
 @keyframes shadowFadeIn {
-    0% { box-shadow: inset .25em .25em 0 rgba(0,0,0,0), inset -.25em -.25em 0 rgba(0,0,0,0), .25em .25em .66em #000000,-.25em -.25em .66em #333239; }
+    0% { box-shadow: inset var(--button-shadow-offset) var(--button-shadow-offset) 0 rgba(0,0,0,0), inset var(--negative-button-shadow-offset) var(--negative-button-shadow-offset) 0 rgba(0,0,0,0), var(--button-shadow-offset) var(--button-shadow-offset) var(--button-shadow-size) var(--button-shadow-color),var(--negative-button-shadow-offset) var(--negative-button-shadow-offset) var(--button-shadow-size) var(--button-highlight-color); }
     50% { box-shadow: none; }
-    100% { inset .25em .25em .66em #000000, inset -.25em -.25em .66em #222222, .25em .25em 0 rgba(0,0,0,0),-.25em -.25em 0 rgba(0,0,0,0); }
+    100% { inset var(--button-shadow-offset) var(--button-shadow-offset) var(--button-shadow-size) var(--button-shadow-color), inset var(--negative-button-shadow-offset) var(--negative-button-shadow-offset) var(--button-shadow-size) #222222, var(--button-shadow-offset) var(--button-shadow-offset) 0 rgba(0,0,0,0),var(--negative-button-shadow-offset) var(--negative-button-shadow-offset) 0 rgba(0,0,0,0); }
 }
 @keyframes shadowFadeOut {
-/    0% { box-shadow: inset .25em .25em .66em #000000, inset -.25em -.25em .66em #222222, .25em .25em 0 rgba(0,0,0,0),-.25em -.25em 0 rgba(0,0,0,0); }
+/    0% { box-shadow: inset var(--button-shadow-offset) var(--button-shadow-offset) var(--button-shadow-size) var(--button-shadow-color), inset var(--negative-button-shadow-offset) var(--negative-button-shadow-offset) var(--button-shadow-size) #222222, var(--button-shadow-offset) var(--button-shadow-offset) 0 rgba(0,0,0,0),var(--negative-button-shadow-offset) var(--negative-button-shadow-offset) 0 rgba(0,0,0,0); }
     50% { box-shadow: none; }
-    100% { box-shadow: inset .25em .25em 0 rgba(0,0,0,0), inset -.25em -.25em 0 rgba(0,0,0,0), .25em .25em .66em #000000,-.25em -.25em .66em #333239; }
+    100% { box-shadow: inset var(--button-shadow-offset) var(--button-shadow-offset) 0 rgba(0,0,0,0), inset var(--negative-button-shadow-offset) var(--negative-button-shadow-offset) 0 rgba(0,0,0,0), var(--button-shadow-offset) var(--button-shadow-offset) var(--button-shadow-size) var(--button-shadow-color),var(--negative-button-shadow-offset) var(--negative-button-shadow-offset) var(--button-shadow-size) var(--button-highlight-color); }
 }
 button{
 	animation: shadowsFadeOut .2s;
 	border: 1px solid;
-	border-radius: .5em;
+	border-radius: 1em;
 	background: none;
-/*	box-shadow: inset 0 0 2em #000000;*/
-	box-shadow: .25em .25em .66em #000000,-.25em -.25em .66em #333239;
-	border: 1px solid #404040;
+/*	box-shadow: inset 0 0 2em var(--button-shadow-color);*/
+	box-shadow: var(--button-shadow-offset) var(--button-shadow-offset) var(--button-shadow-size) var(--button-shadow-color),var(--negative-button-shadow-offset) var(--negative-button-shadow-offset) var(--button-shadow-size) var(--button-highlight-color);
+	border: 2px solid #404040;
 	color: var(--main-font-color);
 	transition: box-shadow .25s, background-size .25s;
 	cursor: pointer;
@@ -74,9 +74,9 @@ button.desc::after{
 	transition: height .25s, border .5s;
 }
 button:hover{
-/*	box-shadow: inset 0 0 0.33em #000000;*/
+/*	box-shadow: inset 0 0 0.33em var(--button-shadow-color);*/
 	animation: shadowFadeIn .1s;
-	box-shadow:  inset .25em .25em .66em #00000099, inset -.25em -.25em .66em #222222, .25em .25em 0 rgba(0,0,0,0),-.25em -.25em 0 rgba(0,0,0,0);
+	box-shadow:  inset var(--button-shadow-offset) var(--button-shadow-offset) var(--button-shadow-size) var(--button-shadow-color), inset var(--negative-button-shadow-offset) var(--negative-button-shadow-offset) var(--button-shadow-size) #222222, var(--button-shadow-offset) var(--button-shadow-offset) 0 rgba(0,0,0,0),var(--negative-button-shadow-offset) var(--negative-button-shadow-offset) 0 rgba(0,0,0,0); /*99*/
 	background-size: 100% !important;
 }
 button.desc:hover::after{
